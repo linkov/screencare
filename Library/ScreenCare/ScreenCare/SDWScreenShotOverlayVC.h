@@ -12,6 +12,6 @@ typedef void (^SDWScreenshotCompletionBlock)(UIImage *image, NSDictionary *notes
 
 @interface SDWScreenShotOverlayVC : UIViewController
 
-- (id)initWithScreenGrab:(UIImageView *)screen completion:(SDWScreenshotCompletionBlock)block;
+- (id)initWithScreenGrab:(UIImageView *)screen statusBarHidden:(BOOL)isHidden completion:(SDWScreenshotCompletionBlock)block;
 
 @end

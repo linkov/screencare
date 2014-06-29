@@ -1,2 +1,3 @@
-dependencies: /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m \
-  /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.h
+dependencies: \
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/SDWCircle.m \
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/SDWCircle.h

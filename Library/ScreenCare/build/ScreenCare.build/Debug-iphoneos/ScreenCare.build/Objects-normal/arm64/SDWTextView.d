@@ -1,3 +1,4 @@
-dependencies: /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m \
-  /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.h \
-  /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+dependencies: \
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/SDWTextView.m \
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/SDWTextView.h \
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/SDWBaseView.h

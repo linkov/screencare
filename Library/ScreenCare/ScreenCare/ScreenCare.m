@@ -14,6 +14,7 @@
     NSString *ucKey;
     NSString *slackKey;
     UIProgressView *progressView;
+    BOOL appStatusbarHidden;
 }
 
 +(instancetype)sharedInstance {
@@ -60,6 +61,7 @@
 
 }
 
+
 - (NSString *)buildNumber {
 
     return [NSString stringWithFormat:@"Build %@",[[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey]];
@@ -68,8 +70,10 @@
 
 - (void)startOverlay {
 
+    appStatusbarHidden = [UIApplication sharedApplication].isStatusBarHidden;
+
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[self takeScreenshot]];
-    SDWScreenShotOverlayVC *overlayVC = [[SDWScreenShotOverlayVC alloc]initWithScreenGrab:imageView completion:^(UIImage *image, NSDictionary *notes) {
+    SDWScreenShotOverlayVC *overlayVC = [[SDWScreenShotOverlayVC alloc]initWithScreenGrab:imageView statusBarHidden:appStatusbarHidden completion:^(UIImage *image, NSDictionary *notes) {
 
         [self uploadImage:image withNotes:notes];
 
@@ -189,17 +193,12 @@
 
 }
 
-- (BOOL)appHasStatusBar {
-
-    return  ![UIApplication sharedApplication].isStatusBarHidden;
-}
-
 - (UIImage *)takeScreenshot {
 
     UIImage *statusBar;
     UIImageView *imageView;
 
-    if ([self appHasStatusBar]) {
+    if (!appStatusbarHidden) {
 
         if ([UIApplication sharedApplication].statusBarStyle != UIStatusBarStyleLightContent) {
 
@@ -249,7 +248,7 @@
 
             // Render the layer hierarchy to the current context
             [[window layer] renderInContext:context];
-            if ([self appHasStatusBar]) {
+            if (!appStatusbarHidden) {
 
                 [statusBar drawInRect:imageView.frame];
             }

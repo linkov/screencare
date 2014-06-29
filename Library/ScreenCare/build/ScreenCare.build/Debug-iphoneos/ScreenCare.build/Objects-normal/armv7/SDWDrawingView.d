@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m \
-  /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.h
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/SDWDrawingView.m \
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/SDWDrawingView.h

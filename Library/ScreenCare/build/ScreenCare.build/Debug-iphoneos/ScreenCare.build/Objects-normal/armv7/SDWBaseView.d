@@ -1,2 +1,3 @@
-dependencies: /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m \
-  /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+dependencies: \
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/SDWBaseView.m \
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/SDWBaseView.h

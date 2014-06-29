@@ -20,6 +20,7 @@
     UIButton *uploadButton;
     NSMutableDictionary *notes;
     CGPoint activeCirclePoint;
+    BOOL isStatusBarHidden;
 }
 
 @property (nonatomic, retain) SDWDrawingView *drawScreen;
@@ -31,7 +32,7 @@
 @implementation SDWScreenShotOverlayVC
 
 
-- (id)initWithScreenGrab:(UIImageView *)screen completion:(SDWScreenshotCompletionBlock)block; {
+- (id)initWithScreenGrab:(UIImageView *)screen statusBarHidden:(BOOL)isHidden completion:(SDWScreenshotCompletionBlock)block {
 
     self = [super init];
     if (self) {
@@ -46,11 +47,6 @@
 - (UIView*)viewForZoomingInScrollView:(UIScrollView *)scrollView {
 
     return imageView;
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-
-    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
 }
 
 - (void)viewDidLoad
@@ -132,9 +128,12 @@
 
 -(void)close {
 
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+    [self dismissViewControllerAnimated:YES completion:^{
 
+        [[UIApplication sharedApplication] setStatusBarHidden:isStatusBarHidden withAnimation:UIStatusBarAnimationNone];
+
+    }];
+}
 - (NSString *)buildNumber {
 
     return [NSString stringWithFormat:@"Build %@",[[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey]];
