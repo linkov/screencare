@@ -1,0 +1,751 @@
+TScreenCare
+v6
+r1
+cCheck dependencies
+cProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWDrawingView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWTextView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWBaseView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWCircle.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWMarkerView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWScreenShotOverlayVC.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/ScreenCare.o /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWDrawingView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWTextView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWBaseView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWCircle.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWMarkerView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWScreenShotOverlayVC.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/ScreenCare.o /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWDrawingView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWTextView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWBaseView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWCircle.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWMarkerView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWScreenShotOverlayVC.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/ScreenCare.o /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/libScreenCare.a normal armv7
+cLibtool /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/libScreenCare.a normal armv7s
+cLibtool /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/libScreenCare.a normal arm64
+cCreateUniversalBinary /Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/libScreenCare.a normal armv7\ armv7s\ arm64
+cPBXCp ScreenCare/ScreenCare.h /Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include/ScreenCare/ScreenCare.h
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c000000005347C2060000000000000132
+t1397211654
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c00000000531E4159000000000000036B
+t1394491737
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E4159000000000000019E
+t1394491737
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000531E415E0000000000A90C10
+t1394491742
+s11078672
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000531E41C30000000000000ADC
+t1394491843
+s2780
+
+N/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m
+c0000000053AFD92E00000000000001EB
+t1404033326
+s491
+
+N/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m
+c0000000053B009410000000000000426
+t1404045633
+s1062
+
+N/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m
+c0000000053AECC1D00000000000007AB
+t1403964445
+s1963
+
+N/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m
+c0000000053AFF5930000000000001361
+t1404040595
+s4961
+
+N/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m
+c0000000053B006160000000000002083
+t1404044822
+s8323
+
+N/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m
+c0000000053AFFB71000000000000093A
+t1404042097
+s2362
+
+N/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare-Prefix.pch
+c0000000053B0074800000000000000B6
+t1404045128
+s182
+
+N/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.h
+c0000000053B008600000000000000153
+t1404045408
+s339
+
+N/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m
+c0000000053B008B300000000000023B5
+t1404045491
+s9141
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWBaseView.o
+t1404047182
+s41684
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWCircle.o
+t1404047182
+s48844
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWDrawingView.o
+t1404047182
+s52244
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWMarkerView.o
+t1404047182
+s62468
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWScreenShotOverlayVC.o
+t1404047182
+s111308
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWTextView.o
+t1404047182
+s60764
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/ScreenCare.LinkFileList
+c0000000053B00F4C000000000000036A
+t1404047180
+s874
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/ScreenCare.o
+t1404047182
+s77340
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/libScreenCare.a
+t1404047182
+s457504
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWBaseView.o
+t1404047181
+s41636
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWCircle.o
+t1404047181
+s47236
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWDrawingView.o
+t1404047181
+s50660
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWMarkerView.o
+t1404047181
+s62228
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWScreenShotOverlayVC.o
+t1404047182
+s102732
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWTextView.o
+t1404047181
+s58604
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/ScreenCare.LinkFileList
+c0000000053B00F4C000000000000036A
+t1404047180
+s874
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/ScreenCare.o
+t1404047182
+s74596
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/libScreenCare.a
+t1404047182
+s440544
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWBaseView.o
+t1404047181
+s41636
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWCircle.o
+t1404047182
+s47228
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWDrawingView.o
+t1404047181
+s50660
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWMarkerView.o
+t1404047182
+s62216
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWScreenShotOverlayVC.o
+t1404047182
+s102748
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWTextView.o
+t1404047181
+s58604
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/ScreenCare.LinkFileList
+c0000000053B00F4C0000000000000371
+t1404047180
+s881
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/ScreenCare.o
+t1404047182
+s74580
+
+N/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/libScreenCare.a
+t1404047182
+s440520
+
+N/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include/ScreenCare/ScreenCare.h
+t1404045591
+s339
+
+N/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/libScreenCare.a
+t1404046915
+s1338636
+
+N/var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch.pch
+t1404047181
+s108716
+
+N/var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch.pch
+t1404047181
+s86128
+
+N/var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch.pch
+t1404047181
+s86144
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies3e5989cc4660b941^9204a9cc4660b941^---0#1#1#--18"Check dependencies36"08CCB244-F25B-4DC8-9579-9F548D1E08AF-
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWBaseView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739982.020350
+e425739982.591286
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWBaseView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m
+xnormal
+xarm64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m192"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWBaseView.o ScreenCare/SDWBaseView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compilered8205ce4660b941^e55f97ce4660b941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m0000000000000000^3247"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWBaseView.o ScreenCare/SDWBaseView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/arm64 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWBaseView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWBaseView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWBaseView.o36"FF85F27B-4EF2-4A76-BA77-6B8D274CA349-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWCircle.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739982.041442
+e425739982.405205
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWCircle.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m
+xnormal
+xarm64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m188"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWCircle.o ScreenCare/SDWCircle.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compilere6eb0ace4660b941^d3bc67ce4660b941^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m0000000000000000^3235"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWCircle.o ScreenCare/SDWCircle.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/arm64 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWCircle.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWCircle.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWCircle.o36"5E14F9D7-75F4-453F-8CBA-2D70101DED33-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWDrawingView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.980801
+e425739982.381994
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWDrawingView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m
+xnormal
+xarm64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m198"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWDrawingView.o ScreenCare/SDWDrawingView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler6de7fbcd4660b941^cdcb61ce4660b941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m0000000000000000^3265"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWDrawingView.o ScreenCare/SDWDrawingView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/arm64 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWDrawingView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWDrawingView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWDrawingView.o36"0B8CBAAF-3880-41F7-85F6-A2F0F2FA1738-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWMarkerView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739982.057083
+e425739982.387387
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWMarkerView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m
+xnormal
+xarm64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m196"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWMarkerView.o ScreenCare/SDWMarkerView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler24f10ece4660b941^0e2c63ce4660b941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m0000000000000000^3259"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWMarkerView.o ScreenCare/SDWMarkerView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/arm64 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWMarkerView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWMarkerView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWMarkerView.o36"96159C8A-55D8-4025-BCCC-B447AE1098CC-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWScreenShotOverlayVC.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739982.057988
+e425739982.443093
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWScreenShotOverlayVC.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m
+xnormal
+xarm64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m214"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWScreenShotOverlayVC.o ScreenCare/SDWScreenShotOverlayVC.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compilerce1b0fce4660b941^976f71ce4660b941^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m0000000000000000^3313"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWScreenShotOverlayVC.o ScreenCare/SDWScreenShotOverlayVC.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/arm64 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWScreenShotOverlayVC.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWScreenShotOverlayVC.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWScreenShotOverlayVC.o36"611A8625-024C-4AFF-92BE-CC0C23E4F2D0-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWTextView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.987983
+e425739982.611663
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWTextView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m
+xnormal
+xarm64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m192"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWTextView.o ScreenCare/SDWTextView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compilereb39fdcd4660b941^53979cce4660b941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m0000000000000000^3247"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWTextView.o ScreenCare/SDWTextView.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/arm64 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWTextView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWTextView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/SDWTextView.o36"98726B69-60ED-43E4-A3FE-307266ADD7DE-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/ScreenCare.o /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739982.088126
+e425739982.428840
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/ScreenCare.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m
+xnormal
+xarm64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFURLConnectionOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFJSONRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFXMLRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFPropertyListRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFImageRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworkActivityIndicatorManager.h
+oIn file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:
+oIn file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:
+o/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:84:9: warning: SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available. [-W#pragma-messages]
+o#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")
+o        ^
+o/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:89:9: warning: MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available. [-W#pragma-messages]
+o#pragma message("MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.")
+o        ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m190"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/ScreenCare.o ScreenCare/ScreenCare.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compilerbabb16ce4660b941^86c86dce4660b941^-1108"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:84:9: warning: SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available. [-W#pragma-messages]#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")        ^/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:89:9: warning: MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available. [-W#pragma-messages]#pragma message("MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.")        ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@148"SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.-425739982#18446744073709551615#0#2(2@82"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@63"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m0000000000000000^9#8#9#8#196#0#21"Apple LLVM 5.1 Notice--2@84"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h0000000000000000^34#12#34#12#1480#0#21"Apple LLVM 5.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h0000000000000000^83#8#83#8#4897#0#25"#pragma message Directive--2@185"MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.-425739982#18446744073709551615#0#2(2@82"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@63"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m0000000000000000^9#8#9#8#196#0#21"Apple LLVM 5.1 Notice--2@84"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h0000000000000000^34#12#34#12#1480#0#21"Apple LLVM 5.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h0000000000000000^88#8#88#8#5129#0#25"#pragma message Directive--0#0#1#-19%DVTDocumentLocation4@63"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m0000000000000000^3241"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/ScreenCare.o ScreenCare/ScreenCare.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/arm64 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/ScreenCare.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/ScreenCare.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/ScreenCare.o36"39861CED-7D74-4739-8D85-9E3B35B0D584-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWBaseView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.348501
+e425739981.948810
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWBaseView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m192"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWBaseView.o ScreenCare/SDWBaseView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerfb7359cd4660b941^f222f3cd4660b941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m0000000000000000^3247"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWBaseView.o ScreenCare/SDWBaseView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWBaseView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWBaseView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWBaseView.o36"2906EF0D-2856-43A6-A9AB-885CC2292739-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWCircle.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.348683
+e425739981.987336
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWCircle.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m188"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWCircle.o ScreenCare/SDWCircle.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler0c9359cd4660b941^69fefccd4660b941^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m0000000000000000^3235"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWCircle.o ScreenCare/SDWCircle.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWCircle.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWCircle.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWCircle.o36"16C60A4E-5586-444A-9052-1DDC56D3090A-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWDrawingView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.348141
+e425739981.956489
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWDrawingView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m198"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWDrawingView.o ScreenCare/SDWDrawingView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilere75559cd4660b941^05dff4cd4660b941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m0000000000000000^3265"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWDrawingView.o ScreenCare/SDWDrawingView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWDrawingView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWDrawingView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWDrawingView.o36"49DE6800-91C6-4640-9B1F-FD8DEE4643D8-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWMarkerView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.348835
+e425739981.894479
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWMarkerView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m196"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWMarkerView.o ScreenCare/SDWMarkerView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler959e59cd4660b941^7c81e5cd4660b941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m0000000000000000^3259"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWMarkerView.o ScreenCare/SDWMarkerView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWMarkerView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWMarkerView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWMarkerView.o36"F7F4EC41-3700-4A24-B3FD-AF30CF133067-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWScreenShotOverlayVC.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.349222
+e425739982.019616
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWScreenShotOverlayVC.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m214"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWScreenShotOverlayVC.o ScreenCare/SDWScreenShotOverlayVC.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler6bbb59cd4660b941^b80305ce4660b941^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m0000000000000000^3313"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWScreenShotOverlayVC.o ScreenCare/SDWScreenShotOverlayVC.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWScreenShotOverlayVC.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWScreenShotOverlayVC.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWScreenShotOverlayVC.o36"0B76BCB9-FFAE-447A-9FE1-05C680F200A4-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWTextView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.348323
+e425739981.968877
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWTextView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m192"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWTextView.o ScreenCare/SDWTextView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler8e7559cd4660b941^2d09f8cd4660b941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m0000000000000000^3247"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWTextView.o ScreenCare/SDWTextView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWTextView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWTextView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/SDWTextView.o36"104CCA6F-099B-4734-B30C-2C7FAAE2100D-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/ScreenCare.o /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.349483
+e425739982.057591
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/ScreenCare.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFURLConnectionOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFJSONRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFXMLRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFPropertyListRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFImageRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworkActivityIndicatorManager.h
+oIn file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:
+oIn file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:
+o/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:84:9: warning: SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available. [-W#pragma-messages]
+o#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")
+o        ^
+o/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:89:9: warning: MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available. [-W#pragma-messages]
+o#pragma message("MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.")
+o        ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m190"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/ScreenCare.o ScreenCare/ScreenCare.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler82c559cd4660b941^4dbd0ece4660b941^-1108"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:84:9: warning: SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available. [-W#pragma-messages]#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")        ^/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:89:9: warning: MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available. [-W#pragma-messages]#pragma message("MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.")        ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@148"SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.-425739982#18446744073709551615#0#2(2@82"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@63"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m0000000000000000^9#8#9#8#196#0#21"Apple LLVM 5.1 Notice--2@84"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h0000000000000000^34#12#34#12#1480#0#21"Apple LLVM 5.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h0000000000000000^83#8#83#8#4897#0#25"#pragma message Directive--2@185"MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.-425739982#18446744073709551615#0#2(2@82"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@63"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m0000000000000000^9#8#9#8#196#0#21"Apple LLVM 5.1 Notice--2@84"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h0000000000000000^34#12#34#12#1480#0#21"Apple LLVM 5.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h0000000000000000^88#8#88#8#5129#0#25"#pragma message Directive--0#0#1#-19%DVTDocumentLocation4@63"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m0000000000000000^3241"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/ScreenCare.o ScreenCare/ScreenCare.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/ScreenCare.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/ScreenCare.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/ScreenCare.o36"6654BD16-6C52-4EFC-A332-EEDAE5E625B0-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWBaseView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.895214
+e425739981.976950
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWBaseView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m194"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWBaseView.o ScreenCare/SDWBaseView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerea77e5cd4660b941^c32afacd4660b941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m0000000000000000^3254"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWBaseView.o ScreenCare/SDWBaseView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7s -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWBaseView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWBaseView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWBaseView.o36"8A5AE164-EB58-4F77-8F5A-5A14304E9E44-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWCircle.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.949650
+e425739982.040704
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWCircle.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m190"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWCircle.o ScreenCare/SDWCircle.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilere76df4cd4660b941^d1ae0ace4660b941^---0#0#1#-19%DVTDocumentLocation2@62"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m0000000000000000^3242"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWCircle.o ScreenCare/SDWCircle.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7s -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWCircle.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWCircle.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWCircle.o36"1C356AA1-103C-45FA-BED8-472A957594BA-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWDrawingView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.350663
+e425739981.884174
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWDrawingView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m200"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWDrawingView.o ScreenCare/SDWDrawingView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerbc205acd4660b941^365ae2cd4660b941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m0000000000000000^3272"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWDrawingView.o ScreenCare/SDWDrawingView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7s -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWDrawingView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWDrawingView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWDrawingView.o36"2F89607C-98DD-4B4B-979C-098E641EA6A2-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWMarkerView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.957235
+e425739982.056839
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWMarkerView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m198"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWMarkerView.o ScreenCare/SDWMarkerView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerdd5bf5cd4660b941^3c870ece4660b941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m0000000000000000^3266"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWMarkerView.o ScreenCare/SDWMarkerView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7s -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWMarkerView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWMarkerView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWMarkerView.o36"2AC26035-FDA2-40A7-ACE0-552B0749B83F-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWScreenShotOverlayVC.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.969498
+e425739982.091180
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWScreenShotOverlayVC.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWDrawingView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWMarkerView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWCircle.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m216"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWScreenShotOverlayVC.o ScreenCare/SDWScreenShotOverlayVC.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler707df8cd4660b941^e25817ce4660b941^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m0000000000000000^3320"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWScreenShotOverlayVC.o ScreenCare/SDWScreenShotOverlayVC.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7s -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWScreenShotOverlayVC.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWScreenShotOverlayVC.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWScreenShotOverlayVC.o36"A0E6E735-C618-4938-A1F8-045018B5BF14-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWTextView.o /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.884515
+e425739981.979400
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWTextView.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWBaseView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m194"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWTextView.o ScreenCare/SDWTextView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler9babe2cd4660b941^2bbdfacd4660b941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m0000000000000000^3254"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWTextView.o ScreenCare/SDWTextView.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7s -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWTextView.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWTextView.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/SDWTextView.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/SDWTextView.o36"437308E8-BDE1-4C3C-B9B4-12E9EFC99CE2-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/ScreenCare.o /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739981.977458
+e425739982.087959
+r1
+xCompileC
+xbuild/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/ScreenCare.o
+x/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFURLConnectionOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFJSONRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFXMLRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFPropertyListRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFImageRequestOperation.h
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworkActivityIndicatorManager.h
+oIn file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:
+oIn file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:
+o/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:84:9: warning: SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available. [-W#pragma-messages]
+o#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")
+o        ^
+o/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:89:9: warning: MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available. [-W#pragma-messages]
+o#pragma message("MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.")
+o        ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m192"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/ScreenCare.o ScreenCare/ScreenCare.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler2788facd4660b941^f18416ce4660b941^-1108"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:84:9: warning: SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available. [-W#pragma-messages]#pragma message("SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.")        ^/Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h:89:9: warning: MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available. [-W#pragma-messages]#pragma message("MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.")        ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@148"SystemConfiguration framework not found in project, or not included in precompiled header. Network reachability functionality will not be available.-425739982#18446744073709551615#0#2(2@82"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@63"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m0000000000000000^9#8#9#8#196#0#21"Apple LLVM 5.1 Notice--2@84"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h0000000000000000^34#12#34#12#1480#0#21"Apple LLVM 5.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h0000000000000000^83#8#83#8#4897#0#25"#pragma message Directive--2@185"MobileCoreServices framework not found in project, or not included in precompiled header. Automatic MIME type detection when uploading files in multipart requests will not be available.-425739982#18446744073709551615#0#2(2@82"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m:10:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@63"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m0000000000000000^9#8#9#8#196#0#21"Apple LLVM 5.1 Notice--2@84"In file included from /Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h:35:-425739982#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFNetworking.h0000000000000000^34#12#34#12#1480#0#21"Apple LLVM 5.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/AFHTTPClient.h0000000000000000^88#8#88#8#5129#0#25"#pragma message Directive--0#0#1#-19%DVTDocumentLocation4@63"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m0000000000000000^3248"CompileC build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/ScreenCare.o ScreenCare/ScreenCare.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7s -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -include /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch -MMD -MT dependencies -MF /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/ScreenCare.d --serialize-diagnostics /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/ScreenCare.dia -c /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare.m -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/ScreenCare.o36"02EB511E-88BD-4BD1-8B12-5B5ACA61CAE5-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CCreateUniversalBinary /Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/libScreenCare.a normal armv7\ armv7s\ arm64
+s425739982.625589
+e425739982.653382
+r1
+xCreateUniversalBinary
+x/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/libScreenCare.a
+xnormal
+xarmv7 armv7s arm64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection159"Create universal binary /Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/libScreenCare.a185"CreateUniversalBinary /Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/libScreenCare.a normal armv7\ armv7s\ arm64944ea0ce4660b941^6b45a7ce4660b941^---0#0#1#-19%DVTDocumentLocation2@142"file:///Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/libScreenCare.a0000000000000000^848"CreateUniversalBinary /Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/libScreenCare.a normal armv7\ armv7s\ arm64    cd /Users/linkov/Desktop/ScreenCare    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/libScreenCare.a /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/libScreenCare.a /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/libScreenCare.a -o /Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/libScreenCare.a36"0EB98EDB-DF92-457C-9DB3-F904E0C49EF7-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CLibtool /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/libScreenCare.a normal arm64
+s425739982.613585
+e425739982.624734
+r1
+xLibtool
+x/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/libScreenCare.a
+xnormal
+xarm64
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Libtool build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/libScreenCare.a normal arm64112"Libtool build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/libScreenCare.a normal arm6456449dce4660b941^67f09fce4660b941^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#1#--854"Libtool build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/libScreenCare.a normal arm64    cd /Users/linkov/Desktop/ScreenCare    export IPHONEOS_DEPLOYMENT_TARGET=7.1    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -filelist /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/ScreenCare.LinkFileList -ObjC -framework Foundation -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/arm64/libScreenCare.a36"5867DCEB-17A8-40E1-8EA9-3F21FFD8F0D0-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CLibtool /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/libScreenCare.a normal armv7
+s425739982.612820
+e425739982.624886
+r1
+xLibtool
+x/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/libScreenCare.a
+xnormal
+xarmv7
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Libtool build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/libScreenCare.a normal armv7112"Libtool build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/libScreenCare.a normal armv7b6139dce4660b941^98fc9fce4660b941^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#1#--854"Libtool build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/libScreenCare.a normal armv7    cd /Users/linkov/Desktop/ScreenCare    export IPHONEOS_DEPLOYMENT_TARGET=7.1    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -filelist /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/ScreenCare.LinkFileList -ObjC -framework Foundation -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7/libScreenCare.a36"D0C3E1C1-DF10-413F-9050-8B2AB20864CE-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CLibtool /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/libScreenCare.a normal armv7s
+s425739982.613240
+e425739982.624774
+r1
+xLibtool
+x/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/libScreenCare.a
+xnormal
+xarmv7s
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Libtool build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/libScreenCare.a normal armv7s114"Libtool build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/libScreenCare.a normal armv7s03409dce4660b941^aef39fce4660b941^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#1#--859"Libtool build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/libScreenCare.a normal armv7s    cd /Users/linkov/Desktop/ScreenCare    export IPHONEOS_DEPLOYMENT_TARGET=7.1    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7s -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos -filelist /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/ScreenCare.LinkFileList -ObjC -framework Foundation -o /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/Objects-normal/armv7s/libScreenCare.a36"1D5CC87E-7BE0-49F0-A319-C61F181FFE92-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CPBXCp ScreenCare/ScreenCare.h /Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include/ScreenCare/ScreenCare.h
+r0
+
+CProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739980.663975
+e425739981.340598
+r1
+xProcessPCH
+x/var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch.pch
+xScreenCare/ScreenCare-Prefix.pch
+xnormal
+xarm64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile ScreenCare/ScreenCare-Prefix.pch322"ProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler5438aacc4660b941^273257cd4660b941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare-Prefix.pch0000000000000000^3434"ProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/arm64 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos --serialize-diagnostics /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch.d -c /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare-Prefix.pch -o /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-btbmsdpkphqnkmchadjafavhdzoq/ScreenCare-Prefix.pch.pch36"EF7FB73B-7EA2-45ED-A1FA-1A0C71022845-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739980.663341
+e425739981.347515
+r1
+xProcessPCH
+x/var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch.pch
+xScreenCare/ScreenCare-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile ScreenCare/ScreenCare-Prefix.pch322"ProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilercf14aacc4660b941^fdf758cd4660b941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare-Prefix.pch0000000000000000^3434"ProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7 -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos --serialize-diagnostics /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch.d -c /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare-Prefix.pch -o /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-cfcxsyndrecblobtmjkytfxrcism/ScreenCare-Prefix.pch.pch36"A006B142-7A19-49B9-AD86-0DDE8E037464-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
+CProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425739980.663679
+e425739981.340605
+r1
+xProcessPCH
+x/var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch.pch
+xScreenCare/ScreenCare-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile ScreenCare/ScreenCare-Prefix.pch323"ProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerbe14aacc4660b941^593657cd4660b941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare-Prefix.pch0000000000000000^3437"ProcessPCH /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch.pch ScreenCare/ScreenCare-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/linkov/Desktop/ScreenCare    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-generated-files.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-own-target-headers.hmap -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-all-target-headers.hmap -iquote /Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/ScreenCare-project-headers.hmap -I/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources/armv7s -I/Users/linkov/Desktop/ScreenCare/build/ScreenCare.build/Debug-iphoneos/ScreenCare.build/DerivedSources -F/Users/linkov/Library/Developer/Xcode/DerivedData/ScreenCare-aipurgosvqxicdcjgjktvgnqdyqf/Build/Products/Debug-iphoneos --serialize-diagnostics /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch.d -c /Users/linkov/Desktop/ScreenCare/ScreenCare/ScreenCare-Prefix.pch -o /var/folders/cl/p64cw1811ng9x1_bv6dl182c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/ScreenCare-Prefix-fkdqhphpsmzwvqdxvtzqadofkzut/ScreenCare-Prefix.pch.pch36"1DC1BAA3-AD67-490D-9BF5-BC3C84EF53DB-
+b8829F1B8-B289-4F93-AF16-8A2E577D193A
+
