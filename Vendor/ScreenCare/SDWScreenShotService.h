@@ -11,5 +11,6 @@
 @interface SDWScreenShotService : UIViewController
 
 +(instancetype)sharedInstance;
+-(id)initWithUploadCareKey:(NSString *)uck slaskHookUrl:(NSString *)slaskUrl;
 
 @end

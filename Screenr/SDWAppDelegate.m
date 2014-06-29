@@ -12,8 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    SDWScreenShotService *SER = [SDWScreenShotService sharedInstance];
-    SER.view.userInteractionEnabled = NO;
+    SDWScreenShotService *SER = [[SDWScreenShotService alloc]initWithUploadCareKey:@"47723df3799764bc67fb" slaskHookUrl:@"https://riders.slack.com/services/hooks/incoming-webhook?token=zOoXaDmovLPqMJXPw9dkbaV0"];
     [self.window.rootViewController.view addSubview:SER.view];
 
     return YES;

@@ -7,8 +7,14 @@
 //
 #import "SDWScreenShotOverlayVC.h"
 #import "SDWScreenShotService.h"
+#import "AFNetworking.h"
 
-@implementation SDWScreenShotService
+@implementation SDWScreenShotService {
+
+    NSString *ucKey;
+    NSString *slaskKey;
+    UIProgressView *progressView;
+}
 
 +(instancetype)sharedInstance {
 
@@ -22,16 +28,35 @@
 	return service;
 }
 
+-(id)initWithUploadCareKey:(NSString *)uck slaskHookUrl:(NSString *)slaskUrl {
+
+    self = [super init];
+    if (self) {
+
+        ucKey = uck ?: @"";
+        slaskKey = slaskUrl ?: @"";
+        [self setupService];
+        self.view.userInteractionEnabled = NO;
+
+    }
+    return self;
+}
+
 - (void)setupService {
 
-    //    [self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
+    progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
+//    progressView.center = self.view.center;
 
-    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationUserDidTakeScreenshotNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
 
 
-        [self startOverlay];
+    [self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
 
-    }];
+//    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationUserDidTakeScreenshotNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+//
+//
+//        [self startOverlay];
+//
+//    }];
 
 }
 
@@ -39,11 +64,114 @@
 - (void)startOverlay {
 
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[self takeScreenshot]];
-    SDWScreenShotOverlayVC *overlayVC = [[SDWScreenShotOverlayVC alloc]initWithScreenGrab:imageView];
+    SDWScreenShotOverlayVC *overlayVC = [[SDWScreenShotOverlayVC alloc]initWithScreenGrab:imageView completion:^(UIImage *image, NSError *error) {
+
+        if (!error) {
+            [self uploadImage:image];
+        }
+
+    }];
 
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
     UINavigationController *screenCaptureNav = [[UINavigationController alloc]initWithRootViewController:overlayVC];
+    [screenCaptureNav.navigationBar addSubview:progressView];
+    progressView.frame = CGRectMake(0, screenCaptureNav.navigationBar.frame.size.height, 320, 2);
+    progressView.hidden = YES;
     [self presentViewController:screenCaptureNav animated:NO completion:nil];
+}
+
+- (void)uploadImage:(UIImage *)image {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    AFHTTPClient *client = [[AFHTTPClient alloc]initWithBaseURL:[NSURL URLWithString:@"https://upload.uploadcare.com/"]];
+    [client setDefaultHeader:@"Accept" value:@"application/json"];
+    client.parameterEncoding = AFJSONParameterEncoding;
+    [client registerHTTPOperationClass:[AFJSONRequestOperation class]];
+
+    progressView.hidden = NO;
+
+    NSData *imageData = UIImageJPEGRepresentation(image, 1.0);
+	NSMutableURLRequest *request = [client multipartFormRequestWithMethod:@"POST"path:@"base/"
+                                                               parameters:@{@"UPLOADCARE_PUB_KEY": ucKey,@"UPLOADCARE_STORE":@YES}
+                                                constructingBodyWithBlock:^(id <AFMultipartFormData> formData)
+                                    {
+                                        [formData appendPartWithFileData:imageData name:@"photo" fileName:@"pic.jpg" mimeType:@"image/jpeg"];
+                                    }];
+
+
+	AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+
+	[operation setUploadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
+
+	    if (totalBytesExpectedToRead > 0) {
+
+            progressView.progress = (float)totalBytesRead / (float)totalBytesExpectedToRead;
+
+	        if ((float)totalBytesRead == (float)totalBytesExpectedToRead) {
+
+			}
+		}
+	}];
+
+	[operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+        progressView.hidden = YES;
+
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[operation responseData] options:NSJSONReadingMutableContainers error:nil];
+        NSLog(@"dict - %@",dict);
+
+        //
+        //        NSString *pURL = [[[[[[operation responseString] stringByReplacingOccurrencesOfString:@"photo\": \"" withString:@""] stringByReplacingOccurrencesOfString:@"{" withString:@""] stringByReplacingOccurrencesOfString:@"}" withString:@""] stringByReplacingOccurrencesOfString:@"\"" withString:@""] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        //
+        //
+        //        NSString *textString = [NSString stringWithFormat:@"%@ <http://www.ucarecdn.com/%@/pic.jpg>",[self buildNumber], pURL];
+        //        NSDictionary *payloadDict = @{@"text":textString};
+        //
+        //
+        //        id JSONData = [NSJSONSerialization dataWithJSONObject:payloadDict  options:NSJSONReadingAllowFragments error:nil];
+        //
+        //         NSMutableURLRequest * urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://riders.slack.com/services/hooks/incoming-webhook?token=zOoXaDmovLPqMJXPw9dkbaV0"]];
+        //       // NSString * params =[NSString stringWithFormat:@"{'text':'%@'}",textString];
+        //        [urlRequest setHTTPMethod:@"POST"];
+        //        [urlRequest setHTTPBody:JSONData];
+        //
+        //
+        //        [urlRequest setValue: @"application/json" forHTTPHeaderField: @"Accept"];
+        //        [urlRequest setValue: @"application/json; charset=utf-8" forHTTPHeaderField: @"content-type"];
+        //
+        //        NSURLSessionConfiguration *conf = [NSURLSessionConfiguration defaultSessionConfiguration];
+        //
+        //        NSURLSession *session = [NSURLSession sessionWithConfiguration:conf];
+        //        NSURLSessionDataTask *task =  [session dataTaskWithRequest:urlRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        //
+        //          DLog(@"%@\n" , [[NSString alloc] initWithData:request.HTTPBody encoding:NSUTF8StringEncoding]);
+        //             DLog(@"%@\n" , [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+        //             DLog(@"%@\n" , error.localizedDescription);
+        //
+        //        }];
+        //        [task resume];
+
+	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+
+        
+	}];
+    
+	[client enqueueHTTPRequestOperation:operation];
+
+
 }
 
 - (BOOL)appHasStatusBar {

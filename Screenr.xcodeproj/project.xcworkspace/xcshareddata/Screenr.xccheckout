@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>644C679C-DFCC-4B2C-867E-09E51BDF6C77</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Screenr</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>51F26901-9A34-4A50-AF93-55D5CEC836DA</key>
+		<string>ssh://github.com/linkov/screencare.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Screenr.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>51F26901-9A34-4A50-AF93-55D5CEC836DA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/linkov/screencare.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>51F26901-9A34-4A50-AF93-55D5CEC836DA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>51F26901-9A34-4A50-AF93-55D5CEC836DA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>screencare</string>
+		</dict>
+	</array>
+</dict>
+</plist>

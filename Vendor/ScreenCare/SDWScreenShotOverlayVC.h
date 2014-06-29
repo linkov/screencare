@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^SDWScreenshotCompletionBlock)(UIImage *, NSError *);
+
 @interface SDWScreenShotOverlayVC : UIViewController
 
-- (id)initWithScreenGrab:(UIImageView *)screen;
+- (id)initWithScreenGrab:(UIImageView *)screen completion:(SDWScreenshotCompletionBlock)block;
 
 @end
