@@ -157,38 +157,29 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 
 
-    if (isMovingExisitingCircle) {
+	if (isMovingExisitingCircle) {
 
-        activeCircle.position = [[touches anyObject] locationInView:self];
+		activeCircle.position = [[touches anyObject] locationInView:self];
 
-        if (![self isCircleInDeleteAreaAtPoint:activeCircle.position]) {
+		CGRect intersectRect = CGRectMake(activeCircle.position.x, activeCircle.position.y, 40, 40);
+		circles[[NSValue valueWithCGRect:intersectRect]] = activeCircle;
 
-            CGRect intersectRect = CGRectMake(activeCircle.position.x, activeCircle.position.y, 40, 40);
-            circles[[NSValue valueWithCGRect:intersectRect]] = activeCircle;
-            [self animateTextNoteFromCircle:activeCircle];
+		if (![self isCircleInDeleteAreaAtPoint:activeCircle.position]) {
+			[self animateTextNoteFromCircle:activeCircle];
+		} else {
+			[self.delegate view:self didDisposeMarkerPoint:activeCircle.position];
+		}
 
-        }
-        else {
+		isMovingExisitingCircle = NO;
+	} else {
 
-            [activeCircle removeFromSuperlayer];
-        }
-
-        isMovingExisitingCircle = NO;
-
-
-    }
-    else {
-
-        touchCircle.position = [[touches anyObject] locationInView:self];
-        touchCircle.hidden = YES;
-        if (![self isCircleInDeleteAreaAtPoint:touchCircle.position]) {
-           [self vendCircleAtPoint:touchCircle.position];
-            [self animateTextNoteFromCircle:touchCircle];
-        }
-
-    }
-
-
+		touchCircle.position = [[touches anyObject] locationInView:self];
+		touchCircle.hidden = YES;
+		if (![self isCircleInDeleteAreaAtPoint:touchCircle.position]) {
+			[self vendCircleAtPoint:touchCircle.position];
+			[self animateTextNoteFromCircle:touchCircle];
+		}
+	}
 }
 
 - (void)animateTextNoteFromCircle:(SDWCircle*)circle {

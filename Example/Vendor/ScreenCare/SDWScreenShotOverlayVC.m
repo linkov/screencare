@@ -267,8 +267,8 @@
     SDWCircle *circle = [self.markerScreen circleAtPoint:point];
     [notes removeObjectForKey:[NSNumber numberWithInteger:circle.number]];
     [self.markerScreen removeCircleAtPoint:point];
-    
-    
+
+
 }
 
 -(void)view:(SDWBaseView *)view didProvideTextForNote:(NSString *)text {
@@ -280,6 +280,8 @@
 
         circle.number = notes.count+1;
     }
+
+
 
     notes[[NSNumber numberWithInteger:circle.number] ] = text;
 

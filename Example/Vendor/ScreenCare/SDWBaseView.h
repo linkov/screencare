@@ -25,6 +25,7 @@
 - (void)view:(SDWBaseView *)view didProvideMarkerPoint:(CGPoint)point;
 - (void)view:(SDWBaseView *)view didProvideTextForNote:(NSString *)text;
 - (void)view:(SDWBaseView *)view didDisposeMarkerPoint:(CGPoint)point;
+
 - (void)viewDidCancelText:(SDWBaseView *)view;
 
 
