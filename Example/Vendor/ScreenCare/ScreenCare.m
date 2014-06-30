@@ -50,14 +50,14 @@
 
 
 
-    [self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
+//    [self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
 
-//        [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationUserDidTakeScreenshotNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
-//
-//
-//            [self startOverlay];
-//
-//        }];
+        [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationUserDidTakeScreenshotNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+
+
+            [self startOverlay];
+
+        }];
 
 }
 
@@ -72,7 +72,7 @@
 
     appStatusbarHidden = [UIApplication sharedApplication].isStatusBarHidden;
 
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[self takeScreenshot]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[self screenshot]];
     SDWScreenShotOverlayVC *overlayVC = [[SDWScreenShotOverlayVC alloc]initWithScreenGrab:imageView statusBarHidden:appStatusbarHidden completion:^(UIImage *image, NSDictionary *notes) {
 
         [self uploadImage:image withNotes:notes];
@@ -82,7 +82,7 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
     UINavigationController *screenCaptureNav = [[UINavigationController alloc]initWithRootViewController:overlayVC];
     [screenCaptureNav.navigationBar addSubview:progressView];
-    progressView.frame = CGRectMake(0, screenCaptureNav.navigationBar.frame.size.height, 320, 2);
+    progressView.frame = CGRectMake(0, screenCaptureNav.navigationBar.frame.size.height, [UIScreen mainScreen].bounds.size.height, 2);
     progressView.hidden = YES;
     [self presentViewController:screenCaptureNav animated:NO completion:nil];
 }
@@ -195,7 +195,9 @@
 
 }
 
-- (UIImage *)takeScreenshot {
+- (UIImage *)screenshot
+{
+
 
     UIImage *statusBar;
     UIImageView *imageView;
@@ -213,62 +215,55 @@
 
 
         imageView = [[UIImageView alloc]initWithImage:statusBar];
-        imageView.frame = CGRectMake(320/2-imageView.frame.size.width/2, 4, imageView.frame.size.width, imageView.frame.size.height);
-
+        imageView.frame = CGRectMake([UIScreen mainScreen].bounds.size.width/2-imageView.frame.size.width/2, 4, imageView.frame.size.width, imageView.frame.size.height);
+        
     }
 
+    CGSize imageSize = CGSizeZero;
 
+    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+    if (UIInterfaceOrientationIsPortrait(orientation)) {
+        imageSize = [UIScreen mainScreen].bounds.size;
+    } else {
+        imageSize = CGSizeMake([UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
+    }
 
-    CGSize imageSize = [[UIScreen mainScreen] bounds].size;
-    if (NULL != UIGraphicsBeginImageContextWithOptions)
-        UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);
-    else
-        UIGraphicsBeginImageContext(imageSize);
-
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
-
-    // Iterate over every window from back to front
-    for (UIWindow *window in [[UIApplication sharedApplication] windows])
-    {
-        if (![window respondsToSelector:@selector(screen)] || [window screen] == [UIScreen mainScreen])
-        {
-            // -renderInContext: renders in the coordinate space of the layer,
-            // so we must first apply the layer's geometry to the graphics context
-            CGContextSaveGState(context);
-            // Center the context around the window's anchor point
-            CGContextTranslateCTM(context, [window center].x, [window center].y);
-            // Apply the window's transform about the anchor point
-            CGContextConcatCTM(context, [window transform]);
-            // Offset by the portion of the bounds left of and above the anchor point
-            CGContextTranslateCTM(context,
-                                  -[window bounds].size.width * [[window layer] anchorPoint].x,
-                                  -[window bounds].size.height * [[window layer] anchorPoint].y);
-
-
-
-            //            [statusBar drawInRect:CGRectMake(0, 0, statusBar.size.width, statusBar.size.height)];
-
-            // Render the layer hierarchy to the current context
-            [[window layer] renderInContext:context];
-            if (!appStatusbarHidden) {
-
-                [statusBar drawInRect:imageView.frame];
-            }
-            //     CGContextDrawImage(context, imageView.frame, statusBar.CGImage);
-            //     [imageView.layer renderInContext:context];
-            
-            // Restore the context
-            CGContextRestoreGState(context);
+    for (UIWindow *window in [[UIApplication sharedApplication] windows]) {
+        CGContextSaveGState(context);
+        CGContextTranslateCTM(context, window.center.x, window.center.y);
+        CGContextConcatCTM(context, window.transform);
+        CGContextTranslateCTM(context, -window.bounds.size.width * window.layer.anchorPoint.x, -window.bounds.size.height * window.layer.anchorPoint.y);
+        if (orientation == UIInterfaceOrientationLandscapeLeft) {
+            CGContextRotateCTM(context, M_PI_2);
+            CGContextTranslateCTM(context, 0, -imageSize.width);
+        } else if (orientation == UIInterfaceOrientationLandscapeRight) {
+            CGContextRotateCTM(context, -M_PI_2);
+            CGContextTranslateCTM(context, -imageSize.height, 0);
+        } else if (orientation == UIInterfaceOrientationPortraitUpsideDown) {
+            CGContextRotateCTM(context, M_PI);
+            CGContextTranslateCTM(context, -imageSize.width, -imageSize.height);
         }
+        if ([window respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)]) {
+            [window drawViewHierarchyInRect:window.bounds afterScreenUpdates:YES];
+        } else {
+            [window.layer renderInContext:context];
+        }
+
+        if (!appStatusbarHidden) {
+
+            [statusBar drawInRect:imageView.frame];
+        }
+
+        CGContextRestoreGState(context);
     }
-    
-    // Retrieve the screenshot image
-    UIImage *imageForEmail = UIGraphicsGetImageFromCurrentImageContext();
-    
+
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
-    return imageForEmail;
+    return image;
 }
+
 
 
 

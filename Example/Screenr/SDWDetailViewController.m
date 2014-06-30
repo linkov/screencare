@@ -10,7 +10,7 @@
 
 @interface SDWDetailViewController () <UIViewControllerTransitionCoordinator> {
 
-    UILabel *myLabel;
+    UITextView *myLabel;
 }
 - (void)configureView;
 @end
@@ -42,10 +42,13 @@
 
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
-        myLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 60, 200, 100)];
-        myLabel.text = @"Test";
-        [self.view addSubview:myLabel];
+
     }
+
+    myLabel = [[UITextView alloc]initWithFrame:CGRectMake(100, 60, 200, 100)];
+    myLabel.text = @"Test";
+    myLabel.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:myLabel];
 }
 - (void)viewDidAppear:(BOOL)animated {
     [super viewWillDisappear:animated];

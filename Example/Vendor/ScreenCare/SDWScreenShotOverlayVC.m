@@ -144,7 +144,7 @@
     UIView *snapShotView = view;
 
     UIImageView *logoView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"upload"]];
-    logoView.frame = CGRectMake(320/2-35/2, 10, 29, 35);
+    logoView.frame = CGRectMake([UIScreen mainScreen].bounds.size.height/2-35/2, 10, 29, 35);
     [snapShotView addSubview:logoView];
 
     UILabel *buildVersionLabel = [[UILabel alloc]initWithFrame:CGRectMake(logoView.frame.origin.x+30, 20, 100, 22)];
