@@ -8,6 +8,7 @@
 #import "SDWScreenShotOverlayVC.h"
 #import "ScreenCare.h"
 #import "AFNetworking.h"
+#import "OTScreenshotHelper.h"
 
 @implementation ScreenCare {
 
@@ -50,14 +51,14 @@
 
 
 
-//    [self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
+    [self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
 
-        [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationUserDidTakeScreenshotNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
-
-
-            [self startOverlay];
-
-        }];
+//        [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationUserDidTakeScreenshotNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+//
+//
+//            [self startOverlay];
+//
+//        }];
 
 }
 
@@ -72,7 +73,7 @@
 
     appStatusbarHidden = [UIApplication sharedApplication].isStatusBarHidden;
 
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[self screenshot]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[OTScreenshotHelper screenshotWithStatusBar:YES]];
     SDWScreenShotOverlayVC *overlayVC = [[SDWScreenShotOverlayVC alloc]initWithScreenGrab:imageView statusBarHidden:appStatusbarHidden completion:^(UIImage *image, NSDictionary *notes) {
 
         [self uploadImage:image withNotes:notes];
@@ -264,7 +265,23 @@
     return image;
 }
 
+- (UIImage *)takeScreen {
 
+    UIView *imgView = [[UIScreen mainScreen] snapshotViewAfterScreenUpdates:NO];
+    CGSize imageSize = [UIScreen mainScreen].bounds.size;
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [imgView.layer renderInContext:context];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+//
+//inline CGImageRef MyCGImageCopyScreenContents(void) {
+//    extern CGImageRef UIGetScreenImage(void);
+//    return UIGetScreenImage(); /* already retained */
+//}
+//
 
 
 @end

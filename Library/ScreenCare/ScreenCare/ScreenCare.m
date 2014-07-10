@@ -8,37 +8,58 @@
 #import "SDWScreenShotOverlayVC.h"
 #import "ScreenCare.h"
 #import "AFNetworking.h"
+#import "OTScreenshotHelper.h"
 
 @implementation ScreenCare {
 
 	NSString *ucKey;
 	NSString *slackKey;
+	NSString *screenCareKey;
+    NSString *userID;
 	UIProgressView *progressView;
 	BOOL appStatusbarHidden;
+	BOOL isUsingScreencareService;
 }
 
-+ (instancetype)sharedInstance {
+- (id)initWithScreencareKey:(NSString *)token {
 
-	static dispatch_once_t pred = 0;
-	static ScreenCare *service = nil;
-	dispatch_once(&pred, ^{
-	    service = [[ScreenCare alloc] init];
-	    [service setupService];
-	});
-	return service;
+
+	self = [super init];
+	if (self) {
+		isUsingScreencareService = YES;
+		screenCareKey = token ? : @"";
+		[self setupService];
+		self.view.userInteractionEnabled = NO;
+	}
+	return self;
 }
 
 - (id)initWithUploadCareKey:(NSString *)uck slackHookUrl:(NSString *)slackUrl; {
 
-	self = [super init];
+	self = [self initWithUploadCareKey:uck slackHookUrl:slackUrl userID:nil];
 	if (self) {
-
+		isUsingScreencareService = NO;
 		ucKey = uck ? : @"";
 		slackKey = slackUrl ? : @"";
 		[self setupService];
 		self.view.userInteractionEnabled = NO;
 	}
 	return self;
+}
+
+-(id)initWithUploadCareKey:(NSString *)uck slackHookUrl:(NSString *)slackUrl userID:(NSString *)uID {
+
+    self = [super init];
+	if (self) {
+		isUsingScreencareService = NO;
+		ucKey = uck ? : @"";
+		slackKey = slackUrl ? : @"";
+        userID = uID;
+		[self setupService];
+		self.view.userInteractionEnabled = NO;
+	}
+	return self;
+
 }
 
 - (void)setupService {
@@ -62,13 +83,25 @@
 	return [NSString stringWithFormat:@"Build %@", [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey]];
 }
 
+- (void) dismissAlerts {
+    for (UIWindow* window in [UIApplication sharedApplication].windows) {
+        for (UIView* view in window.subviews) {
+          //  BOOL alert = [view isKindOfClass:[UIAlertView class]];
+            BOOL action = [view isKindOfClass:[UIActionSheet class]];
+            if (action)
+                [(UIActionSheet *)view dismissWithClickedButtonIndex:0 animated:NO];
+        }
+    }
+}
+
 - (void)startOverlay {
 
 	appStatusbarHidden = [UIApplication sharedApplication].isStatusBarHidden;
 
-	UIImageView *imageView = [[UIImageView alloc] initWithImage:[self screenshot]];
-    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
-    
+	UIImageView *imageView = [[UIImageView alloc] initWithImage:[OTScreenshotHelper screenshotWithStatusBar:YES]];
+	[[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+    [self dismissAlerts];
+
 	SDWScreenShotOverlayVC *overlayVC = [[SDWScreenShotOverlayVC alloc]initWithScreenGrab:imageView statusBarHidden:appStatusbarHidden completion:^(UIImage *image, NSDictionary *notes) {
 
 	    [self uploadImage:image withNotes:notes];
@@ -95,6 +128,21 @@
 }
 
 - (void)uploadImage:(UIImage *)image withNotes:(NSDictionary *)notes {
+
+	if (isUsingScreencareService) {
+
+	//	[self uploadImage:image withNotes:notes];
+	} else {
+
+		[self uploadcareUploadImage:image withNotes:notes];
+	}
+}
+
+- (void)screencareUploadImage:(UIImage *)withNotes:(NSDictionary *)notes {
+    
+}
+
+- (void)uploadcareUploadImage:(UIImage *)image withNotes:(NSDictionary *)notes {
 
 	NSString *notesString;
 
@@ -143,7 +191,7 @@
 	    NSString *pURL = [[[[[[operation responseString] stringByReplacingOccurrencesOfString:@"photo\": \"" withString:@""] stringByReplacingOccurrencesOfString:@"{" withString:@""] stringByReplacingOccurrencesOfString:@"}" withString:@""] stringByReplacingOccurrencesOfString:@"\"" withString:@""] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	    //
 	    //
-	    NSString *textString = [NSString stringWithFormat:@"%@ <http://www.ucarecdn.com/%@/pic.jpg>", [self buildNumber], pURL];
+	    NSString *textString = [NSString stringWithFormat:@"%@ <http://www.ucarecdn.com/%@/pic.jpg>", userID, pURL];
 
 	    if (notesString) {
 
@@ -179,72 +227,6 @@
 	}];
 
 	[client enqueueHTTPRequestOperation:operation];
-}
-
-- (UIImage *)screenshot {
-
-
-	UIImage *statusBar;
-	UIImageView *imageView;
-
-	if (!appStatusbarHidden) {
-
-		if ([UIApplication sharedApplication].statusBarStyle != UIStatusBarStyleLightContent) {
-
-			statusBar = [UIImage imageNamed:@"statusBarBlack"];
-		} else {
-
-			statusBar = [UIImage imageNamed:@"statusBarWhite"];
-		}
-
-
-		imageView = [[UIImageView alloc]initWithImage:statusBar];
-		imageView.frame = CGRectMake([UIScreen mainScreen].bounds.size.width / 2 - imageView.frame.size.width / 2, 4, imageView.frame.size.width, imageView.frame.size.height);
-	}
-
-	CGSize imageSize = CGSizeZero;
-
-	UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-	if (UIInterfaceOrientationIsPortrait(orientation)) {
-		imageSize = [UIScreen mainScreen].bounds.size;
-	} else {
-		imageSize = CGSizeMake([UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
-	}
-
-	UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);
-	CGContextRef context = UIGraphicsGetCurrentContext();
-	for (UIWindow *window in[[UIApplication sharedApplication] windows]) {
-		CGContextSaveGState(context);
-		CGContextTranslateCTM(context, window.center.x, window.center.y);
-		CGContextConcatCTM(context, window.transform);
-		CGContextTranslateCTM(context, -window.bounds.size.width * window.layer.anchorPoint.x, -window.bounds.size.height * window.layer.anchorPoint.y);
-		if (orientation == UIInterfaceOrientationLandscapeLeft) {
-			CGContextRotateCTM(context, M_PI_2);
-			CGContextTranslateCTM(context, 0, -imageSize.width);
-		} else if (orientation == UIInterfaceOrientationLandscapeRight) {
-			CGContextRotateCTM(context, -M_PI_2);
-			CGContextTranslateCTM(context, -imageSize.height, 0);
-		} else if (orientation == UIInterfaceOrientationPortraitUpsideDown) {
-			CGContextRotateCTM(context, M_PI);
-			CGContextTranslateCTM(context, -imageSize.width, -imageSize.height);
-		}
-		if ([window respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)]) {
-			[window drawViewHierarchyInRect:window.bounds afterScreenUpdates:YES];
-		} else {
-			[window.layer renderInContext:context];
-		}
-
-		if (!appStatusbarHidden) {
-
-			[statusBar drawInRect:imageView.frame];
-		}
-
-		CGContextRestoreGState(context);
-	}
-
-	UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-	UIGraphicsEndImageContext();
-	return image;
 }
 
 @end

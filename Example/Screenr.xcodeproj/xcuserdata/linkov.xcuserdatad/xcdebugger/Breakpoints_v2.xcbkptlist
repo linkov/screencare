@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Screenr/SDWMasterViewController.m"
-            timestampString = "425615435.159096"
+            filePath = "Screenr/SDWSimpleMasterVC.m"
+            timestampString = "425895825.411735"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "-insertNewObject:"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "+viewControllerWithRestorationIdentifierPath:coder:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

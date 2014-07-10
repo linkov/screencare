@@ -29,7 +29,6 @@
     }
 }
 
-
 - (BOOL)animateAlongsideTransition:(void (^)(id<UIViewControllerTransitionCoordinatorContext>))animation completion:(void (^)(id<UIViewControllerTransitionCoordinatorContext>))completion {
 
     return YES;
@@ -92,7 +91,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+     self.restorationIdentifier = @"com.sdwr.restorationID.MasterVC";
     [self configureView];
 }
 

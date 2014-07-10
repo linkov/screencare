@@ -10,4 +10,5 @@ dependencies: \
   /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/AFPropertyListRequestOperation.h \
   /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/AFHTTPClient.h \
   /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/AFImageRequestOperation.h \
-  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/AFNetworkActivityIndicatorManager.h
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/AFNetworkActivityIndicatorManager.h \
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/OTScreenshotHelper.h

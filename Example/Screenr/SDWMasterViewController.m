@@ -9,12 +9,15 @@
 #import "SDWMasterViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "SDWDetailViewController.h"
+#import "SDWSimpleDetailVC.h"
 
-@interface SDWMasterViewController () <UIAlertViewDelegate> {
+@interface SDWMasterViewController () <UIAlertViewDelegate,UIViewControllerRestoration> {
 	NSMutableArray *_objects;
 	NSMutableArray *photoArray;
 	NSMutableArray *assets;
 }
+@property (nonatomic) BOOL restoringState;
+
 @end
 
 @implementation SDWMasterViewController
@@ -34,6 +37,9 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+
+    self.restorationClass = [SDWMasterViewController class];
+    self.restorationIdentifier = @"com.sdwr.restorationID.MasterVC";
 	// Do any additional setup after loading the view, typically from a nib.
 
     UIBarButtonItem *clearFromLibButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(clearFromLib:)];
@@ -211,12 +217,48 @@
    }
  */
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-	if ([[segue identifier] isEqualToString:@"showDetail"]) {
-		NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-		NSDate *object = _objects[indexPath.row];
-		[[segue destinationViewController] setDetailItem:object];
-	}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//	if ([[segue identifier] isEqualToString:@"showDetail"]) {
+//		NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//		NSDate *object = _objects[indexPath.row];
+//		[[segue destinationViewController] setDetailItem:object];
+//	}
+//}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    SDWSimpleDetailVC *detail = [SDWSimpleDetailVC new];
+    [self.navigationController pushViewController:detail animated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if (self.restoringState)
+    {
+
+        NSLog(@"state restore");
+        self.restoringState = NO;
+    }
+}
+
++ (UIViewController *)viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents coder:(NSCoder *)coder
+{
+    UIViewController *viewController = [[SDWMasterViewController alloc] init];
+    viewController.restorationIdentifier = [identifierComponents lastObject];
+    viewController.restorationClass = [SDWMasterViewController class];
+    return viewController;
+}
+
+-(void)encodeRestorableStateWithCoder:(NSCoder *)coder
+{
+    [super encodeRestorableStateWithCoder:coder];
+}
+
+- (void)decodeRestorableStateWithCoder:(NSCoder *)coder
+{
+    [super decodeRestorableStateWithCoder:coder];
+    self.restoringState = YES;
 }
 
 @end
