@@ -191,7 +191,7 @@
 	    NSString *pURL = [[[[[[operation responseString] stringByReplacingOccurrencesOfString:@"photo\": \"" withString:@""] stringByReplacingOccurrencesOfString:@"{" withString:@""] stringByReplacingOccurrencesOfString:@"}" withString:@""] stringByReplacingOccurrencesOfString:@"\"" withString:@""] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	    //
 	    //
-	    NSString *textString = [NSString stringWithFormat:@"%@ <http://www.ucarecdn.com/%@/pic.jpg>", userID, pURL];
+	    NSString *textString = [NSString stringWithFormat:@"%@ from %@ [iOS%@] <http://www.ucarecdn.com/%@/pic.jpg>", userID ?:@"",[UIDevice currentDevice].name,[UIDevice currentDevice].systemVersion, pURL];
 
 	    if (notesString) {
 
