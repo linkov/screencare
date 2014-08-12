@@ -117,8 +117,6 @@
 
 - (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 
-
-
     if (isMovingExisitingCircle) {
 
         activeCircle.position = [[touches anyObject] locationInView:self];
@@ -155,7 +153,6 @@
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-
 
 	if (isMovingExisitingCircle) {
 

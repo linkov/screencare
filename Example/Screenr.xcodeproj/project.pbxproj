@@ -40,7 +40,6 @@
 		F1D55CAE195C424400219E50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1D55CAC195C424400219E50 /* InfoPlist.strings */; };
 		F1D55CB0195C424400219E50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D55CAF195C424400219E50 /* main.m */; };
 		F1D55CB4195C424400219E50 /* SDWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D55CB3195C424400219E50 /* SDWAppDelegate.m */; };
-		F1D55CB7195C424400219E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D55CB5195C424400219E50 /* Main.storyboard */; };
 		F1D55CBA195C424400219E50 /* SDWMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D55CB9195C424400219E50 /* SDWMasterViewController.m */; };
 		F1D55CBD195C424400219E50 /* SDWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D55CBC195C424400219E50 /* SDWDetailViewController.m */; };
 		F1D55CBF195C424400219E50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D55CBE195C424400219E50 /* Images.xcassets */; };
@@ -122,7 +121,6 @@
 		F1D55CB1195C424400219E50 /* Screenr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Screenr-Prefix.pch"; sourceTree = "<group>"; };
 		F1D55CB2195C424400219E50 /* SDWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWAppDelegate.h; sourceTree = "<group>"; };
 		F1D55CB3195C424400219E50 /* SDWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWAppDelegate.m; sourceTree = "<group>"; };
-		F1D55CB6195C424400219E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1D55CB8195C424400219E50 /* SDWMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWMasterViewController.h; sourceTree = "<group>"; };
 		F1D55CB9195C424400219E50 /* SDWMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWMasterViewController.m; sourceTree = "<group>"; };
 		F1D55CBB195C424400219E50 /* SDWDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWDetailViewController.h; sourceTree = "<group>"; };
@@ -304,13 +302,12 @@
 				F1BB0D17195E874600A9EF17 /* Vendor */,
 				F1D55CB2195C424400219E50 /* SDWAppDelegate.h */,
 				F1D55CB3195C424400219E50 /* SDWAppDelegate.m */,
-				F1D55CB5195C424400219E50 /* Main.storyboard */,
 				F1D55CB8195C424400219E50 /* SDWMasterViewController.h */,
 				F1D55CB9195C424400219E50 /* SDWMasterViewController.m */,
 				F1BB0EF419629EB700A9EF17 /* SDWSimpleDetailVC.h */,
+				F1BB0EF519629EB700A9EF17 /* SDWSimpleDetailVC.m */,
 				F1BB0EF71962A61300A9EF17 /* SDWSimpleMasterVC.h */,
 				F1BB0EF81962A61300A9EF17 /* SDWSimpleMasterVC.m */,
-				F1BB0EF519629EB700A9EF17 /* SDWSimpleDetailVC.m */,
 				F1D55CBB195C424400219E50 /* SDWDetailViewController.h */,
 				F1D55CBC195C424400219E50 /* SDWDetailViewController.m */,
 				F1D55CBE195C424400219E50 /* Images.xcassets */,
@@ -428,7 +425,6 @@
 				F1BB0D9E195F045E00A9EF17 /* statusBarBlack@2x.png in Resources */,
 				F1D55CBF195C424400219E50 /* Images.xcassets in Resources */,
 				F1D55CAE195C424400219E50 /* InfoPlist.strings in Resources */,
-				F1D55CB7195C424400219E50 /* Main.storyboard in Resources */,
 				F1BB0D6F195E994300A9EF17 /* SVProgressHUD.bundle in Resources */,
 				F1BB0D9F195F045E00A9EF17 /* statusBarWhite@2x.png in Resources */,
 				F1BB0D9D195F045E00A9EF17 /* checkers@2x.png in Resources */,
@@ -505,14 +501,6 @@
 				F1D55CAD195C424400219E50 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F1D55CB5195C424400219E50 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1D55CB6195C424400219E50 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		F1D55CCE195C424400219E50 /* InfoPlist.strings */ = {

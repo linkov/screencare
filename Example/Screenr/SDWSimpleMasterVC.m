@@ -67,7 +67,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SDWSimpleDetailVC *vc = [SDWSimpleDetailVC new];
+    NSString *recID = [NSString stringWithFormat:@"Section:%d, Row:%d", indexPath.section,  indexPath.row];
+    SDWSimpleDetailVC *vc = [[SDWSimpleDetailVC alloc]initWitRecordID:recID];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

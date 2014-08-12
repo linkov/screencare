@@ -16,7 +16,10 @@
 
     UIImageView *imageView;
     UIScrollView *scrollZoom;
-    UIBarButtonItem *addButton;
+
+    UIBarButtonItem *enableDrawingButton;
+    UIBarButtonItem *closeWidgetButton;
+
     UIButton *uploadButton;
     NSMutableDictionary *notes;
     CGPoint activeCirclePoint;
@@ -74,11 +77,11 @@
 
     } completion:nil];
 
-    UIBarButtonItem *cancel = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(close)];
-	self.navigationItem.leftBarButtonItem = cancel;
+    closeWidgetButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(closeWidget)];
+	self.navigationItem.leftBarButtonItem = closeWidgetButton;
 
-	addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(toggleDrawing:)];
-	self.navigationItem.rightBarButtonItem = addButton;
+	enableDrawingButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(toggleDrawing:)];
+	self.navigationItem.rightBarButtonItem = enableDrawingButton;
 
 
     uploadButton =[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 29, 35)];
@@ -126,12 +129,10 @@
 
 }
 
--(void)close {
+-(void)closeWidget {
 
     [self dismissViewControllerAnimated:YES completion:^{
-
         [[UIApplication sharedApplication] setStatusBarHidden:isStatusBarHidden withAnimation:UIStatusBarAnimationNone];
-
     }];
 }
 - (NSString *)buildNumber {
@@ -180,7 +181,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
 
             self.block(snapShot,notes);
-            [uploadButton setEnabled:YES];
+            //[uploadButton setEnabled:YES];
 
 
         });
@@ -238,7 +239,13 @@
 
 }
 
--(void)viewDidCancelText:(SDWBaseView *)view {
+- (void)enableMainNavigationButtons:(BOOL)shouldEnable {
+
+    closeWidgetButton.enabled = enableDrawingButton.enabled = uploadButton.enabled = shouldEnable;
+
+}
+
+- (void)viewDidCancelText:(SDWBaseView *)view {
 
     [UIView animateWithDuration:.2 animations:^{
 
@@ -247,6 +254,8 @@
 
     } completion:^(BOOL finished) {
         view.alpha = 0;
+
+        [self enableMainNavigationButtons:NO];
 
         SDWCircle *circle = [self.markerScreen circleAtPoint:activeCirclePoint];
 
@@ -290,6 +299,7 @@
 
     } completion:^(BOOL finished) {
         view.alpha = 0;
+        [self enableMainNavigationButtons:YES];
     }];
 }
 

@@ -10,18 +10,20 @@
 
 @interface SDWSimpleDetailVC () <UIViewControllerRestoration>
 
-@property (strong) UILabel *label;
+@property (strong) UITextView *label;
 @property (nonatomic) BOOL restoringState;
+
+@property (nonatomic, strong) NSString *selectedRecordId;
 
 @end
 
 @implementation SDWSimpleDetailVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWitRecordID:(NSString *)recID
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        // Custom initialization
+        self.selectedRecordId = recID;
     }
     return self;
 }
@@ -34,14 +36,19 @@
     self.view.restorationIdentifier =  @"com.sdwr.restorationID.SDWSimpleDetailVC.view";
     self.view.backgroundColor = [UIColor whiteColor];
 
-    self.label = [[UILabel alloc]initWithFrame:CGRectMake(150, 150, 60, 30)];
-    self.label.text = @"test";
+    self.label = [[UITextView alloc]initWithFrame:CGRectMake(100, 150, 160, 44)];
+    self.label.backgroundColor = [UIColor redColor];
+  //  self.label.text = @"test";
     [self.view addSubview:self.label];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+
+
+    self.title = self.selectedRecordId;
+
     if (self.restoringState)
     {
 
@@ -69,6 +76,7 @@
 {
     [super encodeRestorableStateWithCoder:coder];
     [coder encodeObject:self.label.text forKey:@"UnsavedText"];
+    [coder encodeObject:self.selectedRecordId forKey:@"SelectedRecord"];
 
 }
 
@@ -76,6 +84,7 @@
 {
     [super decodeRestorableStateWithCoder:coder];
     self.label.text = [coder decodeObjectForKey:@"UnsavedText"];
+    self.selectedRecordId = [coder decodeObjectForKey:@"SelectedRecord"];
     self.restoringState = YES;
 }
 

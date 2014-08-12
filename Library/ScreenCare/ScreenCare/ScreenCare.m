@@ -19,6 +19,7 @@
 	UIProgressView *progressView;
 	BOOL appStatusbarHidden;
 	BOOL isUsingScreencareService;
+    SDWScreenShotOverlayVC *overlayVC;
 }
 
 - (id)initWithScreencareKey:(NSString *)token {
@@ -102,7 +103,7 @@
 	[[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
     [self dismissAlerts];
 
-	SDWScreenShotOverlayVC *overlayVC = [[SDWScreenShotOverlayVC alloc]initWithScreenGrab:imageView statusBarHidden:appStatusbarHidden completion:^(UIImage *image, NSDictionary *notes) {
+	overlayVC = [[SDWScreenShotOverlayVC alloc]initWithScreenGrab:imageView statusBarHidden:appStatusbarHidden completion:^(UIImage *image, NSDictionary *notes) {
 
 	    [self uploadImage:image withNotes:notes];
 	}];
@@ -216,6 +217,15 @@
 	    //
 	    NSURLSession *session = [NSURLSession sessionWithConfiguration:conf];
 	    NSURLSessionDataTask *task =  [session dataTaskWithRequest:urlRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+
+            if(!error) {
+
+                [overlayVC closeWidget];
+            }
+            else  {
+
+                [self showErrorAlert];
+            }
 	        //
 	        //          DLog(@"%@\n" , [[NSString alloc] initWithData:request.HTTPBody encoding:NSUTF8StringEncoding]);
 	        //             DLog(@"%@\n" , [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
@@ -223,10 +233,23 @@
 	        //
 		}];
 	    [task resume];
+
 	} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+
+        [self showErrorAlert];
 	}];
 
 	[client enqueueHTTPRequestOperation:operation];
+}
+
+- (void)showErrorAlert {
+
+    [[UIAlertView alloc]initWithTitle:@"Screencare"
+                              message:@"Connection error occured, stay calm and try again"
+                             delegate:nil
+                    cancelButtonTitle:@"Ok"
+                    otherButtonTitles:nil, nil];
+
 }
 
 @end

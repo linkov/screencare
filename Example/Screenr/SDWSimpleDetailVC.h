@@ -10,4 +10,6 @@
 
 @interface SDWSimpleDetailVC : UIViewController
 
+- (id)initWitRecordID:(NSString *)recID;
+
 @end
