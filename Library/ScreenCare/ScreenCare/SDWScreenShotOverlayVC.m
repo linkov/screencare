@@ -41,6 +41,7 @@
     if (self) {
 
         imageView = screen;
+        isStatusBarHidden = isHidden;
         self.block = block;
 
     }

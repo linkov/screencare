@@ -245,7 +245,7 @@
 - (void)closeWidget {
 
     [self dismissViewControllerAnimated:YES completion:^{
-        [[UIApplication sharedApplication] setStatusBarHidden:isStatusBarHidden withAnimation:UIStatusBarAnimationNone];
+        [[UIApplication sharedApplication] setStatusBarHidden:appStatusbarHidden withAnimation:UIStatusBarAnimationSlide];
     }];
 }
 
