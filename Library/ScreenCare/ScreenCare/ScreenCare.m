@@ -251,11 +251,13 @@
 
 - (void)showErrorAlert {
 
-    [[UIAlertView alloc]initWithTitle:@"Screencare"
+   UIAlertView *alert =  [[UIAlertView alloc]initWithTitle:@"Screencare"
                               message:@"Connection error occured, stay calm and try again"
                              delegate:nil
                     cancelButtonTitle:@"Ok"
                     otherButtonTitles:nil, nil];
+
+    [alert show];
 
 }
 
