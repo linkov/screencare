@@ -193,20 +193,20 @@
 
 -(void)toggleDrawing:(UIBarButtonItem *)item {
 
-    if (addButton.tintColor == [UIColor redColor]) {
+    if (enableDrawingButton.tintColor == [UIColor redColor]) {
 
         //  scrollZoom.userInteractionEnabled = YES;
         self.drawScreen.userInteractionEnabled = NO;
         self.markerScreen.userInteractionEnabled = YES;
-        addButton.tintColor = [UIWindow appearance].tintColor;
+        enableDrawingButton.tintColor = [UIWindow appearance].tintColor;
     }
     
-    else if (addButton.tintColor == [UIWindow appearance].tintColor ) {
+    else if (enableDrawingButton.tintColor == [UIWindow appearance].tintColor ) {
         
         //  scrollZoom.userInteractionEnabled = NO;
         self.drawScreen.userInteractionEnabled = YES;
         self.markerScreen.userInteractionEnabled = NO;
-        addButton.tintColor = [UIColor redColor];
+        enableDrawingButton.tintColor = [UIColor redColor];
     }
 }
 
@@ -222,7 +222,6 @@
     noteText.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.2];
     [self.view addSubview:noteText];
 
-
     SDWCircle *circle = [self.markerScreen circleAtPoint:activeCirclePoint];
     if (notes[[NSNumber numberWithInteger:circle.number]] ) {
 
@@ -234,6 +233,7 @@
 
         noteText.frame = self.view.bounds;
         noteText.backgroundColor = [UIColor greenColor];
+        [self enableMainNavigationButtons:NO];
 
     }];
 
@@ -255,7 +255,7 @@
     } completion:^(BOOL finished) {
         view.alpha = 0;
 
-        [self enableMainNavigationButtons:NO];
+        [self enableMainNavigationButtons:YES];
 
         SDWCircle *circle = [self.markerScreen circleAtPoint:activeCirclePoint];
 

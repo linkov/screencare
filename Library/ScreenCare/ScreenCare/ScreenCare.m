@@ -139,9 +139,9 @@
 	}
 }
 
-- (void)screencareUploadImage:(UIImage *)withNotes:(NSDictionary *)notes {
-    
-}
+//- (void)screencareUploadImage:(UIImage *)withNotes:(NSDictionary *)notes {
+//    
+//}
 
 - (void)uploadcareUploadImage:(UIImage *)image withNotes:(NSDictionary *)notes {
 
@@ -220,7 +220,7 @@
 
             if(!error) {
 
-                [overlayVC closeWidget];
+                [self closeWidget];
             }
             else  {
 
@@ -240,6 +240,13 @@
 	}];
 
 	[client enqueueHTTPRequestOperation:operation];
+}
+
+- (void)closeWidget {
+
+    [self dismissViewControllerAnimated:YES completion:^{
+        [[UIApplication sharedApplication] setStatusBarHidden:isStatusBarHidden withAnimation:UIStatusBarAnimationNone];
+    }];
 }
 
 - (void)showErrorAlert {
