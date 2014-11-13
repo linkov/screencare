@@ -14,32 +14,26 @@
     CGPoint previousPoint;
 }
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
+- (id)initWithFrame:(CGRect)frame {
+	self = [super initWithFrame:frame];
+	if (self) {
+        self.backgroundColor = [UIColor clearColor];
+		self.mainPath = [[UIBezierPath alloc]init];
+		self.mainPath.lineCapStyle = kCGLineCapRound;
+		self.mainPath.miterLimit = 0;
+		self.mainPath.lineWidth = 2;
 
-        self.backgroundColor=[UIColor clearColor];
-        self.mainPath=[[UIBezierPath alloc]init];
-        self.mainPath.lineCapStyle=kCGLineCapRound;
-        self.mainPath.miterLimit=0;
-        self.mainPath.lineWidth=2;
+		UITapGestureRecognizer *deleteTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clearPath)];
+		deleteTap.numberOfTouchesRequired = 2;
+		deleteTap.numberOfTapsRequired = 1;
+		[self addGestureRecognizer:deleteTap];
 
-
-        UITapGestureRecognizer *deleteTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clearPath)];
-        deleteTap.numberOfTouchesRequired = 2;
-        deleteTap.numberOfTapsRequired = 1;
-        [self addGestureRecognizer:deleteTap];
-
-        // Capture touches
-        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-        pan.maximumNumberOfTouches = pan.minimumNumberOfTouches = 1;
-        [self addGestureRecognizer:pan];
-
-
-    }
-    return self;
+		// Capture touches
+		UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+		pan.maximumNumberOfTouches = pan.minimumNumberOfTouches = 1;
+		[self addGestureRecognizer:pan];
+	}
+	return self;
 }
 
 -(void)clearPath {

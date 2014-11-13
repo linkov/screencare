@@ -8,6 +8,8 @@
 
 #import "SDWTextView.h"
 
+static CGFloat buttonSide = 40;
+
 @implementation SDWTextView {
 
     UITextView *mainText;
@@ -26,9 +28,7 @@
 }
 
 -(void)setNote:(NSString *)note {
-
     _note = note;
-
     mainText.text = note;
 }
 
@@ -39,14 +39,14 @@
     [self addSubview:mainText];
     [mainText becomeFirstResponder];
 
-    doneButton = [[UIButton alloc]initWithFrame:CGRectMake(250, 10+64, 40, 40)];
+    doneButton = [UIButton new];
     [doneButton setTitle:@"Done" forState:UIControlStateNormal];
     doneButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
     [doneButton setTitleColor:[[UIColor blueColor] colorWithAlphaComponent:0.8] forState:UIControlStateNormal];
 
     [doneButton addTarget:self action:@selector(finish) forControlEvents:UIControlEventTouchUpInside];
 
-    cancelButton = [[UIButton alloc]initWithFrame:CGRectMake(25, 10+64, 40, 40)];
+    cancelButton = [UIButton new];
     [cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
     [cancelButton setTitleColor:[[UIColor redColor] colorWithAlphaComponent:0.8] forState:UIControlStateNormal];
     cancelButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
@@ -58,11 +58,10 @@
 }
 
 - (void)layoutSubviews {
-
     [super layoutSubviews];
     mainText.frame = CGRectInset(self.bounds, 60, 60+64);
-
-
+    doneButton.frame = CGRectMake(self.bounds.size.width-buttonSide-25, 10+64, buttonSide, buttonSide);
+    cancelButton.frame = CGRectMake(25, 10+64, buttonSide, buttonSide);
 }
 
 -(void)cancel {

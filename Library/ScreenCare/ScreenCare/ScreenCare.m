@@ -21,37 +21,18 @@
     SDWScreenShotOverlayVC *overlayVC;
 }
 
-- (id)initWithScreencareKey:(NSString *)token {
-
-
-	self = [super init];
-	if (self) {
-		isUsingScreencareService = YES;
-		screenCareKey = token ? : @"";
-		[self setupService];
-		self.view.userInteractionEnabled = NO;
-	}
-	return self;
+- (instancetype)initWithScreencareKey:(NSString *)token {
+	return [self initWithUploadCareKey:token slackHookUrl:nil userID:nil];
 }
 
-- (id)initWithUploadCareKey:(NSString *)uck slackHookUrl:(NSString *)slackUrl; {
-
-	self = [self initWithUploadCareKey:uck slackHookUrl:slackUrl userID:nil];
-	if (self) {
-		isUsingScreencareService = NO;
-		ucKey = uck ? : @"";
-		slackKey = slackUrl ? : @"";
-		[self setupService];
-		self.view.userInteractionEnabled = NO;
-	}
-	return self;
+- (instancetype)initWithUploadCareKey:(NSString *)uck slackHookUrl:(NSString *)slackUrl; {
+    return [self initWithUploadCareKey:uck slackHookUrl:slackUrl userID:nil];
 }
 
--(id)initWithUploadCareKey:(NSString *)uck slackHookUrl:(NSString *)slackUrl userID:(NSString *)uID {
+- (instancetype)initWithUploadCareKey:(NSString *)uck slackHookUrl:(NSString *)slackUrl userID:(NSString *)uID {
 
     self = [super init];
 	if (self) {
-		isUsingScreencareService = NO;
 		ucKey = uck ? : @"";
 		slackKey = slackUrl ? : @"";
         userID = uID;
@@ -65,15 +46,10 @@
 - (void)setupService {
 
 	progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
-	//    progressView.center = self.view.center;
 
-
-
-    [self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
+	[self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
 
 	[[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationUserDidTakeScreenshotNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
-
-
 	    [self startOverlay];
 	}];
 }
@@ -86,7 +62,6 @@
 - (void) dismissAlerts {
     for (UIWindow* window in [UIApplication sharedApplication].windows) {
         for (UIView* view in window.subviews) {
-          //  BOOL alert = [view isKindOfClass:[UIAlertView class]];
             BOOL action = [view isKindOfClass:[UIActionSheet class]];
             if (action)
                 [(UIActionSheet *)view dismissWithClickedButtonIndex:0 animated:NO];
