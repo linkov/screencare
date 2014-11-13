@@ -34,8 +34,6 @@
 		F1BB0DD919603EC800A9EF17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1BB0DD719603EC800A9EF17 /* InfoPlist.strings */; };
 		F1BB0DDB19603EC800A9EF17 /* ScreenCareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0DDA19603EC800A9EF17 /* ScreenCareTests.m */; };
 		F1BB0DE919603F9400A9EF17 /* checkers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1BB0DE519603F9400A9EF17 /* checkers@2x.png */; };
-		F1BB0DEA19603F9400A9EF17 /* statusBarBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1BB0DE619603F9400A9EF17 /* statusBarBlack@2x.png */; };
-		F1BB0DEB19603F9400A9EF17 /* statusBarWhite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1BB0DE719603F9400A9EF17 /* statusBarWhite@2x.png */; };
 		F1BB0DEC19603F9400A9EF17 /* upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1BB0DE819603F9400A9EF17 /* upload@2x.png */; };
 		F1BB0DF91960402C00A9EF17 /* SDWBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0DEE1960402C00A9EF17 /* SDWBaseView.m */; };
 		F1BB0DFA1960402C00A9EF17 /* SDWBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0DEE1960402C00A9EF17 /* SDWBaseView.m */; };
@@ -93,8 +91,6 @@
 		F1BB0DD819603EC800A9EF17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F1BB0DDA19603EC800A9EF17 /* ScreenCareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenCareTests.m; sourceTree = "<group>"; };
 		F1BB0DE519603F9400A9EF17 /* checkers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkers@2x.png"; sourceTree = "<group>"; };
-		F1BB0DE619603F9400A9EF17 /* statusBarBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "statusBarBlack@2x.png"; sourceTree = "<group>"; };
-		F1BB0DE719603F9400A9EF17 /* statusBarWhite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "statusBarWhite@2x.png"; sourceTree = "<group>"; };
 		F1BB0DE819603F9400A9EF17 /* upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload@2x.png"; sourceTree = "<group>"; };
 		F1BB0DED1960402C00A9EF17 /* SDWBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWBaseView.h; sourceTree = "<group>"; };
 		F1BB0DEE1960402C00A9EF17 /* SDWBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWBaseView.m; sourceTree = "<group>"; };
@@ -191,11 +187,11 @@
 				F1BB0DED1960402C00A9EF17 /* SDWBaseView.h */,
 				F1BB0DEE1960402C00A9EF17 /* SDWBaseView.m */,
 				F1BB0DEF1960402C00A9EF17 /* SDWCircle.h */,
+				F1BB0DF01960402C00A9EF17 /* SDWCircle.m */,
 				F116F59C196F2CB100BFB1AD /* UIView+StatusBarRef.h */,
 				F116F59D196F2CB100BFB1AD /* UIView+StatusBarRef.m */,
 				F116F599196F2A3A00BFB1AD /* SDWRSwizzleHelper.h */,
 				F116F59A196F2A3A00BFB1AD /* SDWRSwizzleHelper.m */,
-				F1BB0DF01960402C00A9EF17 /* SDWCircle.m */,
 				F1BB0DF11960402C00A9EF17 /* SDWDrawingView.h */,
 				F1BB0DF21960402C00A9EF17 /* SDWDrawingView.m */,
 				F1BB0DF31960402C00A9EF17 /* SDWMarkerView.h */,
@@ -239,8 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				F1BB0DE519603F9400A9EF17 /* checkers@2x.png */,
-				F1BB0DE619603F9400A9EF17 /* statusBarBlack@2x.png */,
-				F1BB0DE719603F9400A9EF17 /* statusBarWhite@2x.png */,
 				F1BB0DE819603F9400A9EF17 /* upload@2x.png */,
 			);
 			path = images;
@@ -317,8 +311,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1BB0DEB19603F9400A9EF17 /* statusBarWhite@2x.png in Resources */,
-				F1BB0DEA19603F9400A9EF17 /* statusBarBlack@2x.png in Resources */,
 				F1BB0DE919603F9400A9EF17 /* checkers@2x.png in Resources */,
 				F1BB0DEC19603F9400A9EF17 /* upload@2x.png in Resources */,
 				F1BB0DD919603EC800A9EF17 /* InfoPlist.strings in Resources */,
@@ -471,6 +463,7 @@
 				DSTROOT = /tmp/ScreenCare.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScreenCare/ScreenCare-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -13,9 +13,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    ScreenCare *SER = [[ScreenCare alloc]initWithUploadCareKey:@"47723df3799764bc67fb" slackHookUrl:@"https://riders.slack.com/services/hooks/incoming-webhook?token=zOoXaDmovLPqMJXPw9dkbaV0"];
-//    [self.window.rootViewController.view addSubview:SER.view];
-//    [self.window makeKeyAndVisible];
+    ScreenCare *SER = [[ScreenCare alloc]initWithUploadCareKey:@"47723df3799764bc67fb" slackHookUrl:@""];
+    [self.window.rootViewController.view addSubview:SER.view];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

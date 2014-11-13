@@ -10,7 +10,8 @@
 
 @interface ScreenCare : UIViewController
 
-+(instancetype)sharedInstance;
 -(id)initWithUploadCareKey:(NSString *)uck slackHookUrl:(NSString *)slackUrl;
+-(id)initWithUploadCareKey:(NSString *)uck slackHookUrl:(NSString *)slackUrl userID:(NSString *)uID;
+-(id)initWithScreencareKey:(NSString *)token;
 
 @end

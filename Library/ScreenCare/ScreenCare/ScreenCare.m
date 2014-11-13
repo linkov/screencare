@@ -18,7 +18,6 @@
     NSString *userID;
 	UIProgressView *progressView;
 	BOOL appStatusbarHidden;
-	BOOL isUsingScreencareService;
     SDWScreenShotOverlayVC *overlayVC;
 }
 
@@ -70,7 +69,7 @@
 
 
 
-	//   [self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
+    [self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
 
 	[[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationUserDidTakeScreenshotNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
 
@@ -111,7 +110,7 @@
 	[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
 	UINavigationController *screenCaptureNav = [[UINavigationController alloc]initWithRootViewController:overlayVC];
 	[screenCaptureNav.navigationBar addSubview:progressView];
-	progressView.frame = CGRectMake(0, screenCaptureNav.navigationBar.frame.size.height, 320, 2);
+	progressView.frame = CGRectMake(0, screenCaptureNav.navigationBar.frame.size.height, screenCaptureNav.navigationBar.frame.size.width, 2);
 	progressView.hidden = YES;
 	[self presentViewController:screenCaptureNav animated:NO completion:nil];
 }
@@ -130,18 +129,8 @@
 
 - (void)uploadImage:(UIImage *)image withNotes:(NSDictionary *)notes {
 
-	if (isUsingScreencareService) {
-
-	//	[self uploadImage:image withNotes:notes];
-	} else {
-
-		[self uploadcareUploadImage:image withNotes:notes];
-	}
+    [self uploadcareUploadImage:image withNotes:notes];
 }
-
-//- (void)screencareUploadImage:(UIImage *)withNotes:(NSDictionary *)notes {
-//    
-//}
 
 - (void)uploadcareUploadImage:(UIImage *)image withNotes:(NSDictionary *)notes {
 
@@ -200,16 +189,13 @@
 		}
 
 	    NSDictionary *payloadDict = @{ @"text":textString };
-	    //
-	    //
 	    id JSONData = [NSJSONSerialization dataWithJSONObject:payloadDict options:NSJSONWritingPrettyPrinted error:nil];
-	    //
+
 	    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:slackKey]];
-	    // NSString * params =[NSString stringWithFormat:@"{'text':'%@'}",textString];
-	    [urlRequest setHTTPMethod:@"POST"];
+
+        [urlRequest setHTTPMethod:@"POST"];
 	    [urlRequest setHTTPBody:JSONData];
-	    //
-	    //
+
 	    [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Accept"];
 	    [urlRequest setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"content-type"];
 
@@ -226,11 +212,6 @@
 
                 [self showErrorAlert];
             }
-	        //
-	        //          DLog(@"%@\n" , [[NSString alloc] initWithData:request.HTTPBody encoding:NSUTF8StringEncoding]);
-	        //             DLog(@"%@\n" , [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
-	        //             DLog(@"%@\n" , error.localizedDescription);
-	        //
 		}];
 	    [task resume];
 

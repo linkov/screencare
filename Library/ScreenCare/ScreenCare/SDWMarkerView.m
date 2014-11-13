@@ -106,7 +106,7 @@
 
 - (BOOL)isCircleInDeleteAreaAtPoint:(CGPoint)point {
 
-     CGRect deleteArea = CGRectMake(0, [UIScreen mainScreen].bounds.size.height-80, 320, 80);
+     CGRect deleteArea = CGRectMake(0, [UIScreen mainScreen].bounds.size.height-80, [UIScreen mainScreen].bounds.size.width, 80);
 
     if (CGRectContainsPoint(deleteArea, point)) return YES;
 

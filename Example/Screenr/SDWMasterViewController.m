@@ -11,20 +11,15 @@
 #import "SDWDetailViewController.h"
 #import "SDWSimpleDetailVC.h"
 
-@interface SDWMasterViewController () <UIAlertViewDelegate,UIViewControllerRestoration> {
+@interface SDWMasterViewController () <UIAlertViewDelegate> {
 	NSMutableArray *_objects;
 	NSMutableArray *photoArray;
 	NSMutableArray *assets;
 }
-@property (nonatomic) BOOL restoringState;
 
 @end
 
 @implementation SDWMasterViewController
-
-- (void)awakeFromNib {
-	[super awakeFromNib];
-}
 
 + (ALAssetsLibrary *)defaultAssetsLibrary {
 	static dispatch_once_t pred = 0;
@@ -38,13 +33,6 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
-    self.restorationClass = [SDWMasterViewController class];
-    self.restorationIdentifier = @"com.sdwr.restorationID.MasterVC";
-	// Do any additional setup after loading the view, typically from a nib.
-
-    UIBarButtonItem *clearFromLibButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(clearFromLib:)];
-	self.navigationItem.leftBarButtonItem = clearFromLibButton;
-
 	UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
 	self.navigationItem.rightBarButtonItem = addButton;
 }
@@ -52,12 +40,6 @@
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
-}
-
-- (void)clearFromLib:(id)sender {
-
-
-
 }
 
 - (void)insertNewObject:(id)sender {
@@ -98,72 +80,7 @@
 
 	];
 
-
-//
-//    ALAssetsLibrary *assetLibrary = [[ALAssetsLibrary alloc] init];
-//
-//    if([ALAssetsLibrary authorizationStatus])
-//    {
-//        [assetLibrary enumerateGroupsWithTypes:ALAssetsGroupAll usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-//            if(group)
-//            {
-//                //Filter photos
-//                photoArray = [self getContentFrom:group withAssetFilter:[ALAssetsFilter allPhotos]];
-//                //Enumerate through the group to get access to the photos.
-//
-//                [[NSNotificationCenter defaultCenter] postNotificationName:@"assetread" object:nil];
-//
-//            }
-//        } failureBlock:^(NSError *error) {
-//            NSLog(@"Error Description %@",[error description]);
-//        }];
-//    }
-//    else{
-//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Permission Denied" message:@"Please allow the application to access your photo and videos in settings panel of your device" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
-//        [alertView show];
-//    }
 }
-
-//-(NSMutableArray *) getContentFrom:(ALAssetsGroup *) group withAssetFilter:(ALAssetsFilter *)filter
-//{
-//    NSMutableArray *contentArray = [NSMutableArray array];
-//    [group setAssetsFilter:filter];
-//
-//    [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
-//
-//        //ALAssetRepresentation holds all the information about the asset being accessed.
-//        if(result)
-//        {
-//
-//            ALAssetRepresentation *representation = [result defaultRepresentation];
-//
-//            //Stores releavant information required from the library
-//            NSMutableDictionary *tempDictionary = [[NSMutableDictionary alloc] init];
-//            //Get the url and timestamp of the images in the ASSET LIBRARY.
-//            NSString *imageUrl = [representation UTI];
-//            NSDictionary *metaDataDictonary = [representation metadata];
-//            NSString *dateString = [result valueForProperty:ALAssetPropertyDate];
-//
-//            //            NSLog(@"imageUrl %@",imageUrl);
-//            //            NSLog(@"metadictionary: %@",metaDataDictonary);
-//
-//            //Check for the date that is applied to the image
-//            // In case its earlier than the last sync date then skip it. ##TODO##
-//
-//            NSString *imageKey = @"ImageUrl";
-//            NSString *metaKey = @"MetaData";
-//            NSString *dateKey = @"CreatedDate";
-//
-//            [tempDictionary setObject:imageUrl forKey:imageKey];
-//            [tempDictionary setObject:metaDataDictonary forKey:metaKey];
-//            [tempDictionary setObject:dateString forKey:dateKey];
-//
-//            //Add the values to photos array.
-//            [contentArray addObject:tempDictionary];
-//        }
-//    }];
-//    return contentArray;
-//}
 
 #pragma mark - Table View
 
@@ -177,9 +94,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-	//NSURL *url = [representation url];
-	//NSLog(@"url: %@", [url absoluteString]);
 
 	ALAsset *asset = assets[indexPath.row];
 
@@ -201,29 +115,6 @@
 	}
 }
 
-/*
-   // Override to support rearranging the table view.
-   - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-   {
-   }
- */
-
-/*
-   // Override to support conditional rearranging of the table view.
-   - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-   {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-   }
- */
-
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//	if ([[segue identifier] isEqualToString:@"showDetail"]) {
-//		NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//		NSDate *object = _objects[indexPath.row];
-//		[[segue destinationViewController] setDetailItem:object];
-//	}
-//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
@@ -234,31 +125,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    if (self.restoringState)
-    {
 
-        NSLog(@"state restore");
-        self.restoringState = NO;
-    }
 }
 
-+ (UIViewController *)viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents coder:(NSCoder *)coder
-{
-    UIViewController *viewController = [[SDWMasterViewController alloc] init];
-    viewController.restorationIdentifier = [identifierComponents lastObject];
-    viewController.restorationClass = [SDWMasterViewController class];
-    return viewController;
-}
-
--(void)encodeRestorableStateWithCoder:(NSCoder *)coder
-{
-    [super encodeRestorableStateWithCoder:coder];
-}
-
-- (void)decodeRestorableStateWithCoder:(NSCoder *)coder
-{
-    [super decodeRestorableStateWithCoder:coder];
-    self.restoringState = YES;
-}
 
 @end

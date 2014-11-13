@@ -69,9 +69,6 @@
 
     [self.view addSubview:scrollZoom];
 
-    //[self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
-
-
     [UIView animateWithDuration:0.6 delay:0 usingSpringWithDamping:0.2 initialSpringVelocity:0.9 options:UIViewAnimationOptionTransitionNone animations:^{
 
         [scrollZoom setZoomScale:0.85];
@@ -91,7 +88,7 @@
 
     self.navigationItem.titleView =uploadButton;
 
-    self.drawScreen = [[SDWDrawingView alloc]initWithFrame:CGRectMake(0, 44, 320, [[UIScreen mainScreen] bounds].size.height-44)];
+    self.drawScreen = [[SDWDrawingView alloc]initWithFrame:CGRectMake(0, 44, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-44)];
 
     self.drawScreen.brush = [UIColor redColor];
     self.drawScreen.userInteractionEnabled = NO;

@@ -10,6 +10,9 @@
 		F116F596196F214300BFB1AD /* ComOpenThreadOTScreenshotHelperSwizzleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F116F590196F214300BFB1AD /* ComOpenThreadOTScreenshotHelperSwizzleHelper.m */; };
 		F116F597196F214300BFB1AD /* UIView+ComOpenThreadOTScreenshotHelperStatusBarReference.m in Sources */ = {isa = PBXBuildFile; fileRef = F116F592196F214300BFB1AD /* UIView+ComOpenThreadOTScreenshotHelperStatusBarReference.m */; };
 		F116F598196F214300BFB1AD /* OTScreenshotHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F116F595196F214300BFB1AD /* OTScreenshotHelper.m */; };
+		F14B361B1A15405100AFD5C9 /* libScreenCare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F14B361A1A15405100AFD5C9 /* libScreenCare.a */; };
+		F14B36241A1552F100AFD5C9 /* checkers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F14B36201A1552F100AFD5C9 /* checkers@2x.png */; };
+		F14B36271A1552F100AFD5C9 /* upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F14B36231A1552F100AFD5C9 /* upload@2x.png */; };
 		F1BB0D62195E97D300A9EF17 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0D50195E97D300A9EF17 /* AFHTTPClient.m */; };
 		F1BB0D63195E97D300A9EF17 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0D52195E97D300A9EF17 /* AFHTTPRequestOperation.m */; };
 		F1BB0D64195E97D300A9EF17 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0D54195E97D300A9EF17 /* AFImageRequestOperation.m */; };
@@ -21,17 +24,6 @@
 		F1BB0D6A195E97D300A9EF17 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0D61195E97D300A9EF17 /* UIImageView+AFNetworking.m */; };
 		F1BB0D6F195E994300A9EF17 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1BB0D6C195E994300A9EF17 /* SVProgressHUD.bundle */; };
 		F1BB0D70195E994300A9EF17 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0D6E195E994300A9EF17 /* SVProgressHUD.m */; };
-		F1BB0D9D195F045E00A9EF17 /* checkers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1BB0D93195F045E00A9EF17 /* checkers@2x.png */; };
-		F1BB0D9E195F045E00A9EF17 /* statusBarBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1BB0D94195F045E00A9EF17 /* statusBarBlack@2x.png */; };
-		F1BB0D9F195F045E00A9EF17 /* statusBarWhite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1BB0D95195F045E00A9EF17 /* statusBarWhite@2x.png */; };
-		F1BB0DA0195F045E00A9EF17 /* upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1BB0D96195F045E00A9EF17 /* upload@2x.png */; };
-		F1BB0EE91961822000A9EF17 /* ScreenCare.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0EDC1961821F00A9EF17 /* ScreenCare.m */; };
-		F1BB0EEA1961822000A9EF17 /* SDWBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0EDE1961821F00A9EF17 /* SDWBaseView.m */; };
-		F1BB0EEB1961822000A9EF17 /* SDWCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0EE01961821F00A9EF17 /* SDWCircle.m */; };
-		F1BB0EEC1961822000A9EF17 /* SDWDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0EE21961821F00A9EF17 /* SDWDrawingView.m */; };
-		F1BB0EED1961822000A9EF17 /* SDWMarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0EE41961821F00A9EF17 /* SDWMarkerView.m */; };
-		F1BB0EEE1961822000A9EF17 /* SDWScreenShotOverlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0EE61961821F00A9EF17 /* SDWScreenShotOverlayVC.m */; };
-		F1BB0EEF1961822000A9EF17 /* SDWTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0EE81961822000A9EF17 /* SDWTextView.m */; };
 		F1BB0EF619629EB700A9EF17 /* SDWSimpleDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0EF519629EB700A9EF17 /* SDWSimpleDetailVC.m */; };
 		F1BB0EF91962A61300A9EF17 /* SDWSimpleMasterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0EF81962A61300A9EF17 /* SDWSimpleMasterVC.m */; };
 		F1D55CA4195C424400219E50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D55CA3195C424400219E50 /* Foundation.framework */; };
@@ -67,6 +59,10 @@
 		F116F592196F214300BFB1AD /* UIView+ComOpenThreadOTScreenshotHelperStatusBarReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ComOpenThreadOTScreenshotHelperStatusBarReference.m"; sourceTree = "<group>"; };
 		F116F594196F214300BFB1AD /* OTScreenshotHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTScreenshotHelper.h; sourceTree = "<group>"; };
 		F116F595196F214300BFB1AD /* OTScreenshotHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTScreenshotHelper.m; sourceTree = "<group>"; };
+		F14B361A1A15405100AFD5C9 /* libScreenCare.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libScreenCare.a; sourceTree = "<group>"; };
+		F14B361C1A1540DC00AFD5C9 /* ScreenCare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenCare.h; sourceTree = "<group>"; };
+		F14B36201A1552F100AFD5C9 /* checkers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkers@2x.png"; sourceTree = "<group>"; };
+		F14B36231A1552F100AFD5C9 /* upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload@2x.png"; sourceTree = "<group>"; };
 		F1BB0D4F195E97D300A9EF17 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		F1BB0D50195E97D300A9EF17 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		F1BB0D51195E97D300A9EF17 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -89,24 +85,6 @@
 		F1BB0D6C195E994300A9EF17 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		F1BB0D6D195E994300A9EF17 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		F1BB0D6E195E994300A9EF17 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		F1BB0D93195F045E00A9EF17 /* checkers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkers@2x.png"; sourceTree = "<group>"; };
-		F1BB0D94195F045E00A9EF17 /* statusBarBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "statusBarBlack@2x.png"; sourceTree = "<group>"; };
-		F1BB0D95195F045E00A9EF17 /* statusBarWhite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "statusBarWhite@2x.png"; sourceTree = "<group>"; };
-		F1BB0D96195F045E00A9EF17 /* upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload@2x.png"; sourceTree = "<group>"; };
-		F1BB0EAD196062B500A9EF17 /* ScreenCare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenCare.h; sourceTree = "<group>"; };
-		F1BB0EDC1961821F00A9EF17 /* ScreenCare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenCare.m; sourceTree = "<group>"; };
-		F1BB0EDD1961821F00A9EF17 /* SDWBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWBaseView.h; sourceTree = "<group>"; };
-		F1BB0EDE1961821F00A9EF17 /* SDWBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWBaseView.m; sourceTree = "<group>"; };
-		F1BB0EDF1961821F00A9EF17 /* SDWCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWCircle.h; sourceTree = "<group>"; };
-		F1BB0EE01961821F00A9EF17 /* SDWCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWCircle.m; sourceTree = "<group>"; };
-		F1BB0EE11961821F00A9EF17 /* SDWDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWDrawingView.h; sourceTree = "<group>"; };
-		F1BB0EE21961821F00A9EF17 /* SDWDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWDrawingView.m; sourceTree = "<group>"; };
-		F1BB0EE31961821F00A9EF17 /* SDWMarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWMarkerView.h; sourceTree = "<group>"; };
-		F1BB0EE41961821F00A9EF17 /* SDWMarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWMarkerView.m; sourceTree = "<group>"; };
-		F1BB0EE51961821F00A9EF17 /* SDWScreenShotOverlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWScreenShotOverlayVC.h; sourceTree = "<group>"; };
-		F1BB0EE61961821F00A9EF17 /* SDWScreenShotOverlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWScreenShotOverlayVC.m; sourceTree = "<group>"; };
-		F1BB0EE71961821F00A9EF17 /* SDWTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWTextView.h; sourceTree = "<group>"; };
-		F1BB0EE81961822000A9EF17 /* SDWTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWTextView.m; sourceTree = "<group>"; };
 		F1BB0EF419629EB700A9EF17 /* SDWSimpleDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWSimpleDetailVC.h; sourceTree = "<group>"; };
 		F1BB0EF519629EB700A9EF17 /* SDWSimpleDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWSimpleDetailVC.m; sourceTree = "<group>"; };
 		F1BB0EF71962A61300A9EF17 /* SDWSimpleMasterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWSimpleMasterVC.h; sourceTree = "<group>"; };
@@ -138,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14B361B1A15405100AFD5C9 /* libScreenCare.a in Frameworks */,
 				F1D55CA6195C424400219E50 /* CoreGraphics.framework in Frameworks */,
 				F1D55CA8195C424400219E50 /* UIKit.framework in Frameworks */,
 				F1D55CA4195C424400219E50 /* Foundation.framework in Frameworks */,
@@ -186,11 +165,30 @@
 			path = Public;
 			sourceTree = "<group>";
 		};
+		F14B36191A15405100AFD5C9 /* ScreenCare */ = {
+			isa = PBXGroup;
+			children = (
+				F14B361F1A1552F100AFD5C9 /* images */,
+				F14B361C1A1540DC00AFD5C9 /* ScreenCare.h */,
+				F14B361A1A15405100AFD5C9 /* libScreenCare.a */,
+			);
+			path = ScreenCare;
+			sourceTree = "<group>";
+		};
+		F14B361F1A1552F100AFD5C9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F14B36201A1552F100AFD5C9 /* checkers@2x.png */,
+				F14B36231A1552F100AFD5C9 /* upload@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		F1BB0D17195E874600A9EF17 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				F14B36191A15405100AFD5C9 /* ScreenCare */,
 				F116F58D196F214300BFB1AD /* OTScreenshotHelper */,
-				F1BB0D91195F045E00A9EF17 /* ScreenCare */,
 				F1BB0D6B195E994300A9EF17 /* SVProgressHUD */,
 				F1BB0D18195E874600A9EF17 /* AFNetworking */,
 			);
@@ -231,39 +229,6 @@
 				F1BB0D6E195E994300A9EF17 /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
-			sourceTree = "<group>";
-		};
-		F1BB0D91195F045E00A9EF17 /* ScreenCare */ = {
-			isa = PBXGroup;
-			children = (
-				F1BB0EDC1961821F00A9EF17 /* ScreenCare.m */,
-				F1BB0EDD1961821F00A9EF17 /* SDWBaseView.h */,
-				F1BB0EDE1961821F00A9EF17 /* SDWBaseView.m */,
-				F1BB0EDF1961821F00A9EF17 /* SDWCircle.h */,
-				F1BB0EE01961821F00A9EF17 /* SDWCircle.m */,
-				F1BB0EE11961821F00A9EF17 /* SDWDrawingView.h */,
-				F1BB0EE21961821F00A9EF17 /* SDWDrawingView.m */,
-				F1BB0EE31961821F00A9EF17 /* SDWMarkerView.h */,
-				F1BB0EE41961821F00A9EF17 /* SDWMarkerView.m */,
-				F1BB0EE51961821F00A9EF17 /* SDWScreenShotOverlayVC.h */,
-				F1BB0EE61961821F00A9EF17 /* SDWScreenShotOverlayVC.m */,
-				F1BB0EE71961821F00A9EF17 /* SDWTextView.h */,
-				F1BB0EE81961822000A9EF17 /* SDWTextView.m */,
-				F1BB0EAD196062B500A9EF17 /* ScreenCare.h */,
-				F1BB0D92195F045E00A9EF17 /* images */,
-			);
-			path = ScreenCare;
-			sourceTree = "<group>";
-		};
-		F1BB0D92195F045E00A9EF17 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				F1BB0D93195F045E00A9EF17 /* checkers@2x.png */,
-				F1BB0D94195F045E00A9EF17 /* statusBarBlack@2x.png */,
-				F1BB0D95195F045E00A9EF17 /* statusBarWhite@2x.png */,
-				F1BB0D96195F045E00A9EF17 /* upload@2x.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 		F1D55C97195C424400219E50 = {
@@ -422,13 +387,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1BB0D9E195F045E00A9EF17 /* statusBarBlack@2x.png in Resources */,
+				F14B36241A1552F100AFD5C9 /* checkers@2x.png in Resources */,
 				F1D55CBF195C424400219E50 /* Images.xcassets in Resources */,
+				F14B36271A1552F100AFD5C9 /* upload@2x.png in Resources */,
 				F1D55CAE195C424400219E50 /* InfoPlist.strings in Resources */,
 				F1BB0D6F195E994300A9EF17 /* SVProgressHUD.bundle in Resources */,
-				F1BB0D9F195F045E00A9EF17 /* statusBarWhite@2x.png in Resources */,
-				F1BB0D9D195F045E00A9EF17 /* checkers@2x.png in Resources */,
-				F1BB0DA0195F045E00A9EF17 /* upload@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,31 +410,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1BB0EE91961822000A9EF17 /* ScreenCare.m in Sources */,
 				F1BB0D68195E97D300A9EF17 /* AFURLConnectionOperation.m in Sources */,
 				F1BB0D69195E97D300A9EF17 /* AFXMLRequestOperation.m in Sources */,
 				F1BB0D65195E97D300A9EF17 /* AFJSONRequestOperation.m in Sources */,
-				F1BB0EEC1961822000A9EF17 /* SDWDrawingView.m in Sources */,
 				F1BB0D63195E97D300A9EF17 /* AFHTTPRequestOperation.m in Sources */,
-				F1BB0EEE1961822000A9EF17 /* SDWScreenShotOverlayVC.m in Sources */,
 				F1D55CBD195C424400219E50 /* SDWDetailViewController.m in Sources */,
 				F1BB0EF619629EB700A9EF17 /* SDWSimpleDetailVC.m in Sources */,
-				F1BB0EEF1961822000A9EF17 /* SDWTextView.m in Sources */,
 				F1BB0D70195E994300A9EF17 /* SVProgressHUD.m in Sources */,
 				F116F596196F214300BFB1AD /* ComOpenThreadOTScreenshotHelperSwizzleHelper.m in Sources */,
 				F116F597196F214300BFB1AD /* UIView+ComOpenThreadOTScreenshotHelperStatusBarReference.m in Sources */,
 				F1D55CB0195C424400219E50 /* main.m in Sources */,
 				F116F598196F214300BFB1AD /* OTScreenshotHelper.m in Sources */,
-				F1BB0EED1961822000A9EF17 /* SDWMarkerView.m in Sources */,
 				F1BB0EF91962A61300A9EF17 /* SDWSimpleMasterVC.m in Sources */,
 				F1D55CBA195C424400219E50 /* SDWMasterViewController.m in Sources */,
 				F1BB0D64195E97D300A9EF17 /* AFImageRequestOperation.m in Sources */,
 				F1BB0D66195E97D300A9EF17 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				F1BB0D6A195E97D300A9EF17 /* UIImageView+AFNetworking.m in Sources */,
-				F1BB0EEA1961822000A9EF17 /* SDWBaseView.m in Sources */,
 				F1D55CB4195C424400219E50 /* SDWAppDelegate.m in Sources */,
 				F1BB0D62195E97D300A9EF17 /* AFHTTPClient.m in Sources */,
-				F1BB0EEB1961822000A9EF17 /* SDWCircle.m in Sources */,
 				F1BB0D67195E97D300A9EF17 /* AFPropertyListRequestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,6 +553,7 @@
 					"$(PROJECT_DIR)/Vendor/ScreenCare",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -614,6 +571,7 @@
 					"$(PROJECT_DIR)/Vendor/ScreenCare",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
