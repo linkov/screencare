@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    ScreenCare *SER = [[ScreenCare alloc]initWithUploadCareKey:@"47723df3799764bc67fb" slackHookUrl:@""];
+    ScreenCare *SER = [[ScreenCare alloc]initWithUploadCareKey:@"your_uploadcare_token" slackHookUrl:@"your_slack_webhook"];
     [self.window.rootViewController.view addSubview:SER.view];
     [self.window makeKeyAndVisible];
     return YES;
