@@ -11,3 +11,4 @@ Currently Screencare intercepts system screenshot - HOME+Power, but gestures as 
 Todo
 ====
 - get rid of OTScreenshotHelper depencency
+- refactor so it's easier to change cloud storage / webhook provider
