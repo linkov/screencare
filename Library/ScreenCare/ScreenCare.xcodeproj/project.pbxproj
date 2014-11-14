@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		F116F59B196F2A3A00BFB1AD /* SDWRSwizzleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F116F59A196F2A3A00BFB1AD /* SDWRSwizzleHelper.m */; };
 		F1BB0DBF19603EC800A9EF17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BB0DBE19603EC800A9EF17 /* Foundation.framework */; };
 		F1BB0DC419603EC800A9EF17 /* ScreenCare.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F1BB0DC319603EC800A9EF17 /* ScreenCare.h */; };
 		F1BB0DC619603EC800A9EF17 /* ScreenCare.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0DC519603EC800A9EF17 /* ScreenCare.m */; };
@@ -71,8 +70,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F116F599196F2A3A00BFB1AD /* SDWRSwizzleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWRSwizzleHelper.h; sourceTree = "<group>"; };
-		F116F59A196F2A3A00BFB1AD /* SDWRSwizzleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWRSwizzleHelper.m; sourceTree = "<group>"; };
 		F1BB0DBB19603EC800A9EF17 /* libScreenCare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libScreenCare.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1BB0DBE19603EC800A9EF17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1BB0DC219603EC800A9EF17 /* ScreenCare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScreenCare-Prefix.pch"; sourceTree = "<group>"; };
@@ -162,8 +159,6 @@
 				F1BB0DEE1960402C00A9EF17 /* SDWBaseView.m */,
 				F1BB0DEF1960402C00A9EF17 /* SDWCircle.h */,
 				F1BB0DF01960402C00A9EF17 /* SDWCircle.m */,
-				F116F599196F2A3A00BFB1AD /* SDWRSwizzleHelper.h */,
-				F116F59A196F2A3A00BFB1AD /* SDWRSwizzleHelper.m */,
 				F1BB0DF11960402C00A9EF17 /* SDWDrawingView.h */,
 				F1BB0DF21960402C00A9EF17 /* SDWDrawingView.m */,
 				F1BB0DF31960402C00A9EF17 /* SDWMarkerView.h */,
@@ -318,7 +313,6 @@
 				F1BB0DFB1960402C00A9EF17 /* SDWCircle.m in Sources */,
 				F1BB0DFF1960402C00A9EF17 /* SDWMarkerView.m in Sources */,
 				F1BB0E011960402C00A9EF17 /* SDWScreenShotOverlayVC.m in Sources */,
-				F116F59B196F2A3A00BFB1AD /* SDWRSwizzleHelper.m in Sources */,
 				F1BB0DC619603EC800A9EF17 /* ScreenCare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
