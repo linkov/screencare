@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface ScreenCare : UIViewController
+@interface ScreenCare : UIViewController <NSURLSessionDataDelegate>
 
 -(id)initWithUploadCareKey:(NSString *)uck slackHookUrl:(NSString *)slackUrl;
 -(id)initWithUploadCareKey:(NSString *)uck slackHookUrl:(NSString *)slackUrl userID:(NSString *)uID;

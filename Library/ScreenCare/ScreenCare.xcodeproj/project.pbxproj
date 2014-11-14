@@ -22,8 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		F116F59B196F2A3A00BFB1AD /* SDWRSwizzleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F116F59A196F2A3A00BFB1AD /* SDWRSwizzleHelper.m */; };
-		F116F59E196F2CB100BFB1AD /* UIView+StatusBarRef.m in Sources */ = {isa = PBXBuildFile; fileRef = F116F59D196F2CB100BFB1AD /* UIView+StatusBarRef.m */; };
-		F116F5A1196F313A00BFB1AD /* OTScreenshotHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F116F5A0196F313A00BFB1AD /* OTScreenshotHelper.m */; };
 		F1BB0DBF19603EC800A9EF17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BB0DBE19603EC800A9EF17 /* Foundation.framework */; };
 		F1BB0DC419603EC800A9EF17 /* ScreenCare.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F1BB0DC319603EC800A9EF17 /* ScreenCare.h */; };
 		F1BB0DC619603EC800A9EF17 /* ScreenCare.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0DC519603EC800A9EF17 /* ScreenCare.m */; };
@@ -75,10 +73,6 @@
 /* Begin PBXFileReference section */
 		F116F599196F2A3A00BFB1AD /* SDWRSwizzleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWRSwizzleHelper.h; sourceTree = "<group>"; };
 		F116F59A196F2A3A00BFB1AD /* SDWRSwizzleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWRSwizzleHelper.m; sourceTree = "<group>"; };
-		F116F59C196F2CB100BFB1AD /* UIView+StatusBarRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+StatusBarRef.h"; sourceTree = "<group>"; };
-		F116F59D196F2CB100BFB1AD /* UIView+StatusBarRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+StatusBarRef.m"; sourceTree = "<group>"; };
-		F116F59F196F313A00BFB1AD /* OTScreenshotHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTScreenshotHelper.h; sourceTree = "<group>"; };
-		F116F5A0196F313A00BFB1AD /* OTScreenshotHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTScreenshotHelper.m; sourceTree = "<group>"; };
 		F1BB0DBB19603EC800A9EF17 /* libScreenCare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libScreenCare.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1BB0DBE19603EC800A9EF17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1BB0DC219603EC800A9EF17 /* ScreenCare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScreenCare-Prefix.pch"; sourceTree = "<group>"; };
@@ -104,15 +98,6 @@
 		F1BB0DF61960402C00A9EF17 /* SDWScreenShotOverlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWScreenShotOverlayVC.m; sourceTree = "<group>"; };
 		F1BB0DF71960402C00A9EF17 /* SDWTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWTextView.h; sourceTree = "<group>"; };
 		F1BB0DF81960402C00A9EF17 /* SDWTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWTextView.m; sourceTree = "<group>"; };
-		F1BB0E051960406200A9EF17 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		F1BB0E061960418000A9EF17 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
-		F1BB0E071960418000A9EF17 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		F1BB0E081960418000A9EF17 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
-		F1BB0E091960418000A9EF17 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
-		F1BB0E0A1960418000A9EF17 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
-		F1BB0E0B1960418000A9EF17 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		F1BB0E0C1960418000A9EF17 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
-		F1BB0E0D196041AC00A9EF17 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,26 +155,13 @@
 		F1BB0DC019603EC800A9EF17 /* ScreenCare */ = {
 			isa = PBXGroup;
 			children = (
-				F1BB0E0D196041AC00A9EF17 /* AFNetworkActivityIndicatorManager.h */,
-				F1BB0E061960418000A9EF17 /* AFHTTPClient.h */,
-				F1BB0E071960418000A9EF17 /* AFHTTPRequestOperation.h */,
-				F1BB0E081960418000A9EF17 /* AFImageRequestOperation.h */,
-				F1BB0E091960418000A9EF17 /* AFJSONRequestOperation.h */,
-				F1BB0E0A1960418000A9EF17 /* AFPropertyListRequestOperation.h */,
-				F1BB0E0B1960418000A9EF17 /* AFURLConnectionOperation.h */,
-				F1BB0E0C1960418000A9EF17 /* AFXMLRequestOperation.h */,
-				F1BB0E051960406200A9EF17 /* AFNetworking.h */,
 				F1BB0DE419603F9400A9EF17 /* images */,
 				F1BB0DC319603EC800A9EF17 /* ScreenCare.h */,
 				F1BB0DC519603EC800A9EF17 /* ScreenCare.m */,
-				F116F59F196F313A00BFB1AD /* OTScreenshotHelper.h */,
-				F116F5A0196F313A00BFB1AD /* OTScreenshotHelper.m */,
 				F1BB0DED1960402C00A9EF17 /* SDWBaseView.h */,
 				F1BB0DEE1960402C00A9EF17 /* SDWBaseView.m */,
 				F1BB0DEF1960402C00A9EF17 /* SDWCircle.h */,
 				F1BB0DF01960402C00A9EF17 /* SDWCircle.m */,
-				F116F59C196F2CB100BFB1AD /* UIView+StatusBarRef.h */,
-				F116F59D196F2CB100BFB1AD /* UIView+StatusBarRef.m */,
 				F116F599196F2A3A00BFB1AD /* SDWRSwizzleHelper.h */,
 				F116F59A196F2A3A00BFB1AD /* SDWRSwizzleHelper.m */,
 				F1BB0DF11960402C00A9EF17 /* SDWDrawingView.h */,
@@ -340,11 +312,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F116F5A1196F313A00BFB1AD /* OTScreenshotHelper.m in Sources */,
 				F1BB0DFD1960402C00A9EF17 /* SDWDrawingView.m in Sources */,
 				F1BB0E031960402C00A9EF17 /* SDWTextView.m in Sources */,
 				F1BB0DF91960402C00A9EF17 /* SDWBaseView.m in Sources */,
-				F116F59E196F2CB100BFB1AD /* UIView+StatusBarRef.m in Sources */,
 				F1BB0DFB1960402C00A9EF17 /* SDWCircle.m in Sources */,
 				F1BB0DFF1960402C00A9EF17 /* SDWMarkerView.m in Sources */,
 				F1BB0E011960402C00A9EF17 /* SDWScreenShotOverlayVC.m in Sources */,
