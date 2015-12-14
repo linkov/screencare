@@ -1,5 +1,4 @@
 dependencies: \
   /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/ScreenCare.m \
   /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/SDWScreenShotOverlayVC.h \
-  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/ScreenCare.h \
-  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/OTScreenshotHelper.h
+  /Users/linkov/Documents/sdwr/screencare/Library/ScreenCare/ScreenCare/ScreenCare.h

@@ -7,7 +7,6 @@
 //
 #import "SDWScreenShotOverlayVC.h"
 #import "ScreenCare.h"
-#import "OTScreenshotHelper.h"
 
 @implementation ScreenCare {
 
@@ -49,7 +48,7 @@
     progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
 
     // uncomment to test in Simulator
-    [self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
+    //[self performSelector:@selector(startOverlay) withObject:nil afterDelay:1.3];
 
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationUserDidTakeScreenshotNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
         [self startOverlay];
@@ -73,9 +72,24 @@
 
 - (void)startOverlay {
 
+    UIViewController *controllerToPresentOnTopOff;
+
+    if ([UIApplication sharedApplication].keyWindow.rootViewController.presentedViewController) {
+
+        controllerToPresentOnTopOff = [UIApplication sharedApplication].keyWindow.rootViewController.presentedViewController;
+    } else {
+        controllerToPresentOnTopOff = [UIApplication sharedApplication].keyWindow.rootViewController;
+    }
+
+
     appStatusbarHidden = [UIApplication sharedApplication].isStatusBarHidden;
 
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[OTScreenshotHelper screenshotWithStatusBar:YES]];
+    UIGraphicsBeginImageContextWithOptions(controllerToPresentOnTopOff.view.bounds.size, NO, 1);
+    [controllerToPresentOnTopOff.view drawViewHierarchyInRect:self.view.bounds afterScreenUpdates:YES];
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:viewImage];
     [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
     [self dismissAlerts];
 
