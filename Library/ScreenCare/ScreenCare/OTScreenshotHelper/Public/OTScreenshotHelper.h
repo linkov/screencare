@@ -7,7 +7,6 @@
 //  Screen Capture in UIKit Applications : http://developer.apple.com/library/ios/qa/qa1703/_index.html
 
 #import <Foundation/Foundation.h>
-@import UIKit;
 
 @interface OTScreenshotHelper : NSObject
 
