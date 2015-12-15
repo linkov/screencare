@@ -103,7 +103,7 @@
     [screenCaptureNav.navigationBar addSubview:progressView];
     progressView.frame = CGRectMake(0, screenCaptureNav.navigationBar.frame.size.height, screenCaptureNav.navigationBar.frame.size.width, 2);
     progressView.hidden = YES;
-    [self presentViewController:screenCaptureNav animated:NO completion:nil];
+    [controllerToPresentOnTopOff presentViewController:screenCaptureNav animated:NO completion:nil];
 }
 
 - (NSString *)prepareNotes:(NSDictionary *)notes {
