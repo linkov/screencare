@@ -12,6 +12,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.framework    = 'JavaScriptCore'
   s.source_files = 'Library/ScreenCare/ScreenCare/**/*.{h,m,png}'
+  s.resource_bundles = {
+  'ScreencareBundle' => ['Screencare/Assets/*.png', 
+                  'Screencare/Classes/**/*.{h,m}']
+}
   s.requires_arc = true
   s.license      = { :type => "SDWR License", :file => "LICENSE" }
 end

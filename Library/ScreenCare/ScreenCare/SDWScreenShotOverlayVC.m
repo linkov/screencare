@@ -53,12 +53,37 @@
     return imageView;
 }
 
+- (UIImage *)checkersImage {
+
+    NSString *bundleURL = [[NSBundle mainBundle] pathForResource:@"ScreencareBundle"
+                                                          ofType:@"bundle"];
+    NSBundle *podBundle = [NSBundle bundleWithPath:bundleURL];
+    UIImage *image = [UIImage imageNamed:@"checkers.png"
+                                inBundle:podBundle
+           compatibleWithTraitCollection:nil];
+
+    return image;
+}
+
+
+- (UIImage *)uploadImage {
+
+    NSString *bundleURL = [[NSBundle mainBundle] pathForResource:@"ScreencareBundle"
+                                                          ofType:@"bundle"];
+    NSBundle *podBundle = [NSBundle bundleWithPath:bundleURL];
+    UIImage *image = [UIImage imageNamed:@"upload.png"
+                                inBundle:podBundle
+           compatibleWithTraitCollection:nil];
+
+    return image;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     notes = [NSMutableDictionary dictionary];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"checkers"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[self checkersImage]];
     scrollZoom = [[UIScrollView alloc]initWithFrame:self.view.bounds];
     scrollZoom.minimumZoomScale=0.6;
     scrollZoom.maximumZoomScale=6.0;
@@ -83,7 +108,7 @@
 
 
     uploadButton =[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 29, 35)];
-    [uploadButton setImage:[[UIImage imageNamed:@"upload"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
+    [uploadButton setImage:[[self uploadImage] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
     [uploadButton addTarget:self action:@selector(afUpload) forControlEvents:UIControlEventTouchUpInside];
 
     self.navigationItem.titleView =uploadButton;
@@ -142,7 +167,7 @@
 
     UIView *snapShotView = view;
 
-    UIImageView *logoView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"upload"]];
+    UIImageView *logoView = [[UIImageView alloc]initWithImage:[self uploadImage]];
     logoView.frame = CGRectMake(320/2-35/2, 10, 29, 35);
     [snapShotView addSubview:logoView];
 
