@@ -55,12 +55,7 @@
 
 - (UIImage *)checkersImage {
 
-    NSString *bundleURL = [[NSBundle mainBundle] pathForResource:@"ScreencareBundle"
-                                                          ofType:@"bundle"];
-    NSBundle *podBundle = [NSBundle bundleWithPath:bundleURL];
-    UIImage *image = [UIImage imageNamed:@"checkers.png"
-                                inBundle:podBundle
-           compatibleWithTraitCollection:nil];
+    UIImage *image = [UIImage imageNamed:@"checkers"];
 
     return image;
 }
@@ -68,12 +63,7 @@
 
 - (UIImage *)uploadImage {
 
-    NSString *bundleURL = [[NSBundle mainBundle] pathForResource:@"ScreencareBundle"
-                                                          ofType:@"bundle"];
-    NSBundle *podBundle = [NSBundle bundleWithPath:bundleURL];
-    UIImage *image = [UIImage imageNamed:@"upload.png"
-                                inBundle:podBundle
-           compatibleWithTraitCollection:nil];
+    UIImage *image = [UIImage imageNamed:@"upload"];
 
     return image;
 }
